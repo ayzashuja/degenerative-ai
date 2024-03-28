@@ -8,11 +8,8 @@ function Home() {
     return (
         <div>
             <h1>
-            Hello and welcome to the home page. Click on start game to start the game
-            If you havent loged in then please login.
-            You will need to register yourself before loging in.
+            Hello and welcome to the home page.
             </h1>
-            {/* <Link to="/game">Start Game</Link> */}
         </div>
     )
 }

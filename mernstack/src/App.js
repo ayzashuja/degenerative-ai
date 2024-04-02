@@ -5,6 +5,7 @@ import Login from './components/Login.js';
 import Signup from './components/Signup.js';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { useState } from 'react';
+import React, { Component } from "react";
 
 
 function App() {

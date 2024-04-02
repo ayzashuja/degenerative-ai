@@ -58,13 +58,14 @@ const Signup = () => {
     e.preventDefault();
     // http://localhost:5000/signup
     try {
-      const response = await axios.post('http://127.0.0.1:5000/signup', { username, password });
+      const response = await axios.post('http://127.0.0.1:5000/signup', { username: username, password: password });
+      // http://192.168.100.10:5000
       setSuccess(true);
       setError('');
       window.location.href = '/home'; // Redirect to home page
     } catch (err) {
       setSuccess(false);
-      setError(err.response.data.error);
+      setError(err.response.err);
     }
   };
 

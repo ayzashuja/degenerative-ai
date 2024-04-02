@@ -1,6 +1,23 @@
 from flask import Flask, jsonify, request, render_template
+from pymongo import MongoClient
+
+
 
 app = Flask(__name__)
+
+try:
+    # Connect to MongoDB
+    client = MongoClient("mongodb+srv://talhatariq:<Helloabc123>@mycluster.tkqpdpz.mongodb.net/")
+    db = client.test
+    users_collection = db.users
+    print("Connected to MongoDB")
+except Exception as e:
+    print("Error connecting to MongoDB:", e)
+
+@app.route('/users', methods=['GET'])
+def get_users():
+    users = users_collection.find()
+    return jsonify(list(users)), 200
 
 @app.route('/')
 def index():

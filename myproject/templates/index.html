@@ -1,23 +1,19 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flask Backend Frontend</title>
+    <title>Sample App</title>
 </head>
 <body>
-    <h1>Welcome to the Flask Backend Frontend!</h1>
-
-    <h2>Greeting</h2>
-    <input type="text" id="nameInput" placeholder="Enter your name">
+    <input type="text" id="nameInput">
     <button onclick="getGreeting()">Get Greeting</button>
-    <p id="greetingOutput"></p>
-
-    <h2>Add Numbers</h2>
-    <input type="text" id="numbersInput" placeholder="Enter numbers (comma-separated)">
+    <div id="greetingOutput"></div>
+    
+    <input type="text" id="numbersInput">
     <button onclick="addNumbers()">Add Numbers</button>
-    <p id="sumOutput"></p>
-
-    <script src="/static/app.js"></script>
+    <div id="sumOutput"></div>
+    
+    <script src="{{ url_for('static', filename='app.js') }}"></script>
 </body>
 </html>

@@ -1,6 +1,6 @@
 from flask import Flask, jsonify, request, render_template
 from pymongo import MongoClient
-from werkzeug.security import generate_password_hash, check_password_hash
+# from werkzeug.security import generate_password_hash, check_password_hash
 
 
 app = Flask(__name__)
@@ -13,7 +13,6 @@ try:
     print("Connected to MongoDB")
 except Exception as e:
     print("Error connecting to MongoDB:", e)
-
 
 # app = Flask(__name__)
 
@@ -40,7 +39,8 @@ def signup():
         return jsonify({"message": "Username already exists"}), 400
 
     # Hash the password before storing
-    hashed_password = generate_password_hash(password)
+    # hashed_password = generate_password_hash(password)
+    hashed_password = password
 
     # Insert user into the database
     users_collection.insert_one({"username": username, "password": hashed_password})
@@ -59,7 +59,11 @@ def login():
         return jsonify({"message": "User not found"}), 404
 
     # Check if the provided password matches the hashed password in the database
-    if check_password_hash(user['password'], password):
+    # if check_password_hash(user['password'], password):
+    #     return jsonify({"message": "Login successful"}), 200
+    # else:
+    #     return jsonify({"message": "Incorrect password"}), 401
+    if password == user['password']:
         return jsonify({"message": "Login successful"}), 200
     else:
         return jsonify({"message": "Incorrect password"}), 401

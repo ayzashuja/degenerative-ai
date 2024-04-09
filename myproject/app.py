@@ -14,11 +14,11 @@ try:
 except Exception as e:
     print("Error connecting to MongoDB:", e)
 
-# app = Flask(__name__)
+app = Flask(__name__)
 
-@app.route('/')
-def index():
-    return render_template('index.html')
+# @app.route('/')
+# def index():
+#     return render_template('index.html')
 
 @app.route('/signup_page')
 def signup_page():
@@ -33,7 +33,7 @@ def signup():
     data = request.json
     username = data.get('username')
     password = data.get('password')
-
+    print(username+password)
     # Check if username already exists
     if users_collection.find_one({"username": username}):
         return jsonify({"message": "Username already exists"}), 400

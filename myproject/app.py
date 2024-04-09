@@ -20,30 +20,26 @@ app = Flask(__name__)
 # def index():
 #     return render_template('index.html')
 
+@app.route('/')
+def login_page():
+    return render_template('login.html')
+
 @app.route('/signup_page')
 def signup_page():
     return render_template('signup.html')
-
-@app.route('/login_page')
-def login_page():
-    return render_template('login.html')
 
 @app.route('/signup', methods=['POST'])
 def signup():
     data = request.json
     username = data.get('username')
     password = data.get('password')
-    print(username+password)
+
     # Check if username already exists
     if users_collection.find_one({"username": username}):
         return jsonify({"message": "Username already exists"}), 400
 
-    # Hash the password before storing
-    # hashed_password = generate_password_hash(password)
-    hashed_password = password
-
     # Insert user into the database
-    users_collection.insert_one({"username": username, "password": hashed_password})
+    users_collection.insert_one({"username": username, "password": password})
     return jsonify({"message": "Signup successful"}), 200
 
 @app.route('/login', methods=['POST'])
@@ -58,11 +54,7 @@ def login():
     if not user:
         return jsonify({"message": "User not found"}), 404
 
-    # Check if the provided password matches the hashed password in the database
-    # if check_password_hash(user['password'], password):
-    #     return jsonify({"message": "Login successful"}), 200
-    # else:
-    #     return jsonify({"message": "Incorrect password"}), 401
+    # Check if the provided password matches the password in the database
     if password == user['password']:
         return jsonify({"message": "Login successful"}), 200
     else:

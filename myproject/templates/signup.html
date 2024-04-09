@@ -11,11 +11,9 @@
     <input type="password" id="signupPassword" placeholder="Password">
     <button onclick="signup()">Signup</button>
     <div id="signupMessage"></div>
-    <t1>Click on </t1>
-    <button onclick="redirectToLogin()">Login</button>
-    <t1> to go to login page.</t1>
-    <script src="{{ url_for('static', filename='signup.js') }}"></script>
-    <!-- <script src="{{ url_for('static', filename='signup.js') }}"></script> -->
 
+    <t1>Click <a href="/">here</a> to go to the login page.</t1>
+
+    <script src="{{ url_for('static', filename='signup.js') }}"></script>
 </body>
 </html>

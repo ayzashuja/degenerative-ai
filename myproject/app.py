@@ -14,6 +14,9 @@ try:
 except Exception as e:
     print("Error connecting to MongoDB:", e)
 
+
+# app = Flask(__name__)
+
 @app.route('/')
 def index():
     return render_template('index.html')

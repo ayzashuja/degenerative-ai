@@ -7,7 +7,8 @@ app = Flask(__name__)
 
 try:
     # Connect to MongoDB
-    client = MongoClient("mongodb+srv://23100300:0123456789@cluster0.snltxmz.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+    client = MongoClient("mongodb+srv://talhatariq:Helloabc123@mycluster.tkqpdpz.mongodb.net/?retryWrites=true&w=majority&appName=MyCluster")
+                        #  mongodb+srv://23100300:0123456789@cluster0.snltxmz.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
                         #  mongodb+srv://talhatariq:<Helloabc123>@mycluster.tkqpdpz.mongodb.net/")
     db = client.test
     users_collection = db.users

@@ -7,10 +7,14 @@ app = Flask(__name__)
 
 try:
     # Connect to MongoDB
-    client = MongoClient("mongodb+srv://talhatariq:<Helloabc123>@mycluster.tkqpdpz.mongodb.net/")
+    client = MongoClient("mongodb+srv://23100300:0123456789@cluster0.snltxmz.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+                        #  mongodb+srv://talhatariq:<Helloabc123>@mycluster.tkqpdpz.mongodb.net/")
     db = client.test
     users_collection = db.users
     print("Connected to MongoDB")
+    print("Mongo: ", client)
+    print("DB: ", db)
+    print("users_collection: ", users_collection)
 except Exception as e:
     print("Error connecting to MongoDB:", e)
 
@@ -33,6 +37,8 @@ def signup():
     data = request.json
     username = data.get('username')
     password = data.get('password')
+    print(username)
+    print(password)
 
     # Check if username already exists
     if users_collection.find_one({"username": username}):
@@ -42,12 +48,13 @@ def signup():
     users_collection.insert_one({"username": username, "password": password})
     return jsonify({"message": "Signup successful"}), 200
 
-@app.route('/login', methods=['POST'])
+@app.route('/', methods=['POST'])
 def login():
     data = request.json
     username = data.get('username')
     password = data.get('password')
-
+    print(username)
+    print(password)
     # Retrieve user from the database
     user = users_collection.find_one({"username": username})
 

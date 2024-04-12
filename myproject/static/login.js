@@ -1,7 +1,7 @@
 function login() {
     var username = document.getElementById("loginUsername").value;
     var password = document.getElementById("loginPassword").value;
-    fetch('/login', {
+    fetch('/', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'

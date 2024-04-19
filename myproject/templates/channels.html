@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Channels</title>
+</head>
+<body>
+    <h2>List of Channels</h2>
+    <ul>
+        <li><a href="/channel/1">Channel 1</a></li>
+        <li><a href="/channel/2">Channel 2</a></li>
+        <!-- Add more channels as needed -->
+    </ul>
+    <!-- <button onclick="redirectToLogin()">Logout</button> -->
+    <form action="/logout" method="post">
+      <button type="submit">Logout</button>
+    </form>
+    <script src="{{ url_for('static', filename='channels.js') }}"></script>
+</body>
+</html>

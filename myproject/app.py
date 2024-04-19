@@ -1,5 +1,6 @@
-from flask import Flask, jsonify, request, render_template
+from flask import Flask, jsonify, request, render_template, redirect, url_for, session
 from pymongo import MongoClient
+
 # from werkzeug.security import generate_password_hash, check_password_hash
 
 
@@ -20,6 +21,8 @@ except Exception as e:
     print("Error connecting to MongoDB:", e)
 
 app = Flask(__name__)
+
+app.secret_key = 'your_secret_key'
 
 # @app.route('/')
 # def index():
@@ -47,7 +50,10 @@ def signup():
 
     # Insert user into the database
     users_collection.insert_one({"username": username, "password": password})
-    return jsonify({"message": "Signup successful"}), 200
+    session['logged_in'] = True
+    print("Redirecting to channels page after signup")
+    return redirect(url_for('channels'))
+    # return jsonify({"message": "Signup successful"}), 200
 
 @app.route('/', methods=['POST'])
 def login():
@@ -64,9 +70,35 @@ def login():
 
     # Check if the provided password matches the password in the database
     if password == user['password']:
-        return jsonify({"message": "Login successful"}), 200
+        session['logged_in'] = True
+        print("Redirecting to channels page after signup")
+        return redirect(url_for('channels'))
+        # return redirect('/channels')
+        # return jsonify({"message": "Login successful"}), 200
     else:
         return jsonify({"message": "Incorrect password"}), 401
+
+@app.route('/channels')
+def channels():
+    if not session.get('logged_in'):
+        return redirect(url_for('login_page'))
+    return render_template('channels.html')
+
+# Route for channel videos
+@app.route('/channel/<int:channel_id>')
+def channel_videos(channel_id):
+    return render_template(f'channel{channel_id}.html')
+
+# Redirect after successful login/signup
+@app.route('/redirect_to_channels')
+def redirect_to_channels():
+    return redirect(url_for('channels'))
+
+@app.route('/logout', methods=['POST'])
+def logout():
+    # Clear session variables
+    session.pop('logged_in', None)
+    return redirect(url_for('login_page'))
 
 # @app.route('/users', methods=['GET'])
 # def get_users():

@@ -1,7 +1,7 @@
 function redirectToLogin() {
   window.location.href = '/';
 }
-
+//
 // // JavaScript code to handle logout
 // document.getElementById("logoutButton").addEventListener("click", function() {
 //   fetch('/logout', {

@@ -100,6 +100,15 @@ def logout():
     session.pop('logged_in', None)
     return redirect(url_for('login_page'))
 
+@app.route('/process_message', methods=['POST'])
+def process_message():
+    data = request.json
+    message = data.get('message')
+    # Process the message here (e.g., send to a model for response generation)
+    # For now, let's just acknowledge the message
+    return jsonify({"message": "Message acknowledged"})
+
+
 # @app.route('/users', methods=['GET'])
 # def get_users():
 #     users = users_collection.find()

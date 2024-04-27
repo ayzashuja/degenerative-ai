@@ -4,24 +4,107 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Channels</title>
+    <style>
+        body {
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        #chat-container {
+            width: 80%;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        #chat-log {
+            height: 300px;
+            overflow-y: scroll;
+            border: 1px solid #ddd;
+            padding: 10px;
+        }
+        #input-container {
+            margin-top: 10px;
+        }
+        #user-input {
+            width: calc(100% - 78px); /* Adjusted to accommodate the button width */
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 3px;
+        }
+        #send-btn {
+            padding: 8px 15px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
     <h2>List of Channels</h2>
     <ul>
-        <li><a href="/channel/1">programmingwithmosh</a></li>
-        <li><a href="/channel/2">TEDx</a></li>
-        <li><a href="/channel/3">ycombinator</a></li>
-        <li><a href="/channel/4">BroCodez</a></li>
-        <li><a href="/channel/5">freecodecamp</a></li>
-        <li><a href="/channel/6">CleverProgrammer</a></li>
-        <li><a href="/channel/7">NetNinja</a></li>
-        <li><a href="/channel/8">lexfridman</a></li>
-        <li><a href="/channel/9">hubermanlab</a></li>
+        <li>programmingwithmosh</li>
+        <li>TEDx</li>
+        <li>ycombinator</li>
+        <li>BroCodez</li>
+        <li>freecodecamp</li>
+        <li>CleverProgrammer</li>
+        <li>NetNinja</li>
+        <li>lexfridman</li>
+        <li>hubermanlab</li>
     </ul>
     <!-- <button onclick="redirectToLogin()">Logout</button> -->
     <form action="/logout" method="post">
       <button type="submit">Logout</button>
     </form>
     <script src="{{ url_for('static', filename='channels.js') }}"></script>
+    <div id="chat-container">
+        <h2>Ask questions from programmingwithmosh</h2>
+        <div id="chat-log"></div>
+        <div id="input-container">
+            <input type="text" id="user-input" placeholder="Type your message...">
+            <button id="send-btn">Send</button>
+        </div>
+    </div>
+
+    <script>
+        const chatLog = document.getElementById('chat-log');
+        const userInput = document.getElementById('user-input');
+        const sendBtn = document.getElementById('send-btn');
+    
+        sendBtn.addEventListener('click', function() {
+            const message = userInput.value.trim();
+            if (message === '') return;
+    
+            // Send user's message to the server
+            fetch('/process_message', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ message })
+            })
+            .then(response => response.json())
+            .then(data => {
+                // Append the server's response to the chat log
+                appendMessage('programmingwithmosh', data.message);
+            })
+            .catch(error => console.error('Error:', error));
+    
+            // Append user's message to the chat log
+            appendMessage('You', message);
+            userInput.value = '';
+        });
+    
+        function appendMessage(sender, message) {
+            const messageElement = document.createElement('div');
+            messageElement.innerHTML = `<strong>${sender}:</strong> ${message}`;
+            chatLog.appendChild(messageElement);
+            chatLog.scrollTop = chatLog.scrollHeight;
+        }
+    </script>
 </body>
 </html>

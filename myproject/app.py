@@ -108,7 +108,7 @@ def logout():
 def process_message():
     data = request.json
     message = data.get('message') 
-    notebook_path = 'myproject//models//final_prompts.ipynb'
+    notebook_path = 'models//final_prompts.ipynb'
     with open(notebook_path, 'r', encoding='utf-8') as f:
         nb = nbformat.read(f, as_version=4)
 

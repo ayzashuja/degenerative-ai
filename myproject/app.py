@@ -1,7 +1,11 @@
 from flask import Flask, jsonify, request, render_template, redirect, url_for, session
 from pymongo import MongoClient
-
+import os
+import importlib.util
 # from werkzeug.security import generate_password_hash, check_password_hash
+from nbconvert import PythonExporter
+import nbformat
+from IPython.display import display
 
 
 app = Flask(__name__)
@@ -103,10 +107,22 @@ def logout():
 @app.route('/process_message', methods=['POST'])
 def process_message():
     data = request.json
-    message = data.get('message')
+    message = data.get('message') 
+    notebook_path = 'myproject//models//final_prompts.ipynb'
+    with open(notebook_path, 'r', encoding='utf-8') as f:
+        nb = nbformat.read(f, as_version=4)
+
+    py_exporter = PythonExporter()
+    py_script, _ = py_exporter.from_notebook_node(nb)
+    spec = importlib.util.spec_from_loader('__main__', loader=None)
+    module = importlib.util.module_from_spec(spec)
+    exec(py_script, module.__dict__)
+    #exec(py_script)
+    result = module.query_result(message)
+    #print(result)
     # Process the message here (e.g., send to a model for response generation)
     # For now, let's just acknowledge the message
-    return jsonify({"message": "Message acknowledged"})
+    return jsonify({"message": result})
 
 
 # @app.route('/users', methods=['GET'])

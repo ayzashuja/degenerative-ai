@@ -1,0 +1,227 @@
+all right so we've seen how to make
+simple providers and how to consume them
+now I want to move on to another Topic
+in River pod which is all about
+generated code so in River pod version 2
+we actually have access to another
+package called River pod generator which
+can generate provider code for us we
+still have to write out a little bit of
+code which the generator package uses to
+generate our provider for us they're
+kind of like instructions but that code
+we write becomes much more stream LED
+and easier to manage now in the case of
+these two simple providers we've already
+created the use of generated code might
+seem a little bit Overkill and it is but
+I wanted to introduce this idea of code
+Generation Now with a very simple
+example and then later on in the course
+we'll generate slightly more complex
+providers too so then there are a couple
+of packages we need to install to do
+this so let's quickly head to the docs
+to see those so then the two packages
+we're going to be installing are this
+one right here River pod annotation and
+we need that to add little annotations
+to our instruction code if you like to
+tell River pod that we want something
+generating and then this one right here
+riffer pod generator which is a Dev
+dependency and this is the thing that
+actually generates the code for US based
+on the annotations we provide so we're
+going to grab both of those so we can
+install them in a second but just dead
+quickly while I'm on the docks I want to
+show you this so the providers we've
+created they would look more like this
+right here when we use generated code so
+these are basically the instructions
+that we have to tell the generator
+package we want to generate something
+this is the river pod annotation that
+says hey this thing needs generating and
+this is the thing right here function
+that is essentially the instructions to
+the generator on how to create this
+provider so we just use a function and
+then return a value so let's try this
+out in our project okay then so open up
+your terminal and let's clear down here
+just so we've got a bit of room and get
+rid of that and then I will paste in
+this first one flutter Pub ad River pod
+annotation to install that one and then
+I'm going to grab the second one right
+here and then I'm going to paste that in
+as well remember this is a Dev
+dependency so press enter this is the
+riffer Pod generator package all right
+cool so now we can start using these So
+then whenever we want to generate a
+provider we need to first of all use a
+little annotation which is at River pod
+this tells River pod that we want to use
+code generation to generate a provider
+now when we want to generate a simple
+read only provider like this one we
+already have all we have to do is make a
+function underneath this annotation
+which returns a value so let's try to
+recreate the products Provider by using
+the generator to make it so we already
+have the river pod annotation then we
+need to make a function under it that
+Returns the states so we Define the
+return type of the function first which
+is a list of product objects then we
+give the function a name which I'm going
+to call product and when River pod
+generates a provided for us it uses this
+name of the function to name the
+provider all it does is add the word
+provider after the function name so the
+provider it generates for this one would
+be product provider so this function in
+itself takes in a ref object should we
+need it much like we had one up there in
+the providers when we made them and then
+inside the function all we need to do is
+return the state value which is just all
+products and that my friends is it now
+when we run the river pod generator it's
+going to see this annotation and
+therefore know that the function which
+follows it should be used to generate a
+provider now before we do anything else
+you'll notice a little red squiggly line
+under here and that's because we haven't
+imported the river pod annotations
+package so just do that at the top here
+so River pod annotation right here and
+when we do that you'll notice this
+squiggly line right here and that's
+because when we import the river pod
+annotation file we no longer need this
+one because this thing right here this
+includes the ability not only to do this
+but also if we want to create providers
+it includes that as well so we don't
+really need the other one all right so
+now let's save this so we'll generate
+this in a second but first of all I'm
+going to delete the current products
+provided we made because we won't need
+that anymore and also because the river
+pod generator is going to generate a
+provider with the same name as this for
+us in a moment too so so if I kept this
+around and we'd have naming conflicts
+and we don't want those and also I just
+want to paste in one quick line of code
+near the top of the file as well and
+that is parts and then a relative path
+to another file called products
+provider.
+g.d and that's the same name as this
+current file but with a g at the end of
+it to say this is a generated file and
+this is the file that River pod will
+generate for us to house the generated
+provider and we need to add this
+statement in this file to say look this
+current file that we're in will be a
+part of this other generated file all
+right so now we want to start generating
+stuff this provider right here in
+particular so let's open up the terminal
+there's one more thing we need to
+install and that is this thing called
+build Runner so flutter Pub ad then it's
+a Dev dependency so use dev then a colon
+then build Runner we're going to press
+enter to install that and that's so we
+can run a command which essentially is
+going to watch our files for changes and
+then it's going to generate our code on
+the fly when we change the files or
+basically create new stuff like this and
+save the file so once we've done that we
+can run another command which is let me
+clear this first of all and then we can
+run Dart run build Runner which is what
+we just installed and then watch so this
+is the thing that watches our files it
+runs the generator when we create
+something new like this let's run this
+and see if it works it might take just a
+few seconds or even like 30 seconds the
+first time you do this all right and
+you'll notice now if we scroll up this
+error should have gone away because
+because this file will now exist and we
+can see it here it's a gray icon because
+this is a generated file and we have all
+of this stuff right here now it looks a
+little complicated but don't worry about
+that you do not need to modify this and
+it's explicit in telling us that right
+here do not modify by hand this is all
+the generated code for us but
+essentially what we have now is a
+product provider right here and yeah it
+looks more complicated but it's going to
+do the same thing for us so if we cross
+this off now because this file is a part
+of that file when we're importing this
+file into I think our home
+screen everything's going to work the
+same way we don't get an error here
+saying we need to import that generated
+file because that generated file is a
+part of this thing right here so since
+we're importing this in here it doesn't
+matter so there's no errors everything
+should still work the same way only now
+we're using that generated provider
+instead so let's see if this still works
+on the home screen I'm going to do a
+hard refresh just to catch any changes
+in case it's not already done that but
+yeah we can still see all the products
+awesome okay so now let's go back to
+this file products provider and we're
+going to do the same thing for this one
+right here so we'll say at River pod
+again first of all we do this anytime
+you want to generate something this is
+going to return the same kind of thing a
+list of products so copy that paste it
+here I'm going to call it reduced
+products and and then this is a function
+which takes in the ref arguments inside
+here we just need to return something
+and that's something is this thing right
+here so copy that paste it here and then
+we can get rid of this if we save this
+it's going to generate this one for us
+as well and we should see that inside
+this file if we scroll down we can now
+see this one reduced products provider
+as well again we don't have to change
+anything inside the cart screen
+everything should still work the same
+way we'll do a hard refresh just to
+catch any changes and then go to the
+cart to make sure it's still working
+which it is awesome so there we go my
+friends that is how we can generate our
+providers instead of manually creating
+them and again for these very simple
+read only providers this was a bit of
+Overkill but later on as your providers
+get a bit more complex this is going to
+be much easier

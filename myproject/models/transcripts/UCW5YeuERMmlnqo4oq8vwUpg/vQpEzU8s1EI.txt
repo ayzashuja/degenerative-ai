@@ -1,0 +1,146 @@
+Okay so we've seen now how to consume
+provider state within a stateless widget
+by using the special consumer widget
+class that River pod gives to us which
+gives us access to that ref argument
+right and on that we can use this watch
+method to access and watch the provider
+States and then we can use that within
+the widget itself which we do but what
+about accessing a provider within a
+stateful widget well it's actually not
+too dissimilar but there are just a
+couple of small differences so let's
+open up the cart screen I think it is
+which is a stateful widget yeah to go
+through the differences first of all we
+don't extend the consumer widget class
+like we did for a stateless widget but
+instead we extend one called consumer
+stateful widget which we'll do in a
+moment we also get access to a consumer
+State class which we need to use as well
+instead of the bog standard State class
+right here and then once we've used
+those we are automatically get access to
+the ref object inside the build method
+and this time within a stateful widget
+we don't need to accept that as an
+argument to the bill method we just get
+access to it automatically so let's
+update this stateful widget then to be a
+consumer stateful widget instead so
+let's come over here and get rid of this
+and say
+consumer stateful widget click on this
+it Auto Imports this package for us
+which we need and then down here we need
+to use something called consumer state
+in instead of just state so let's say
+consumer State and click on that and
+then let's do the same thing over here
+consumer State and there we go so now we
+get access to the ref object inside this
+build function and like I said we don't
+need to accept it this time as an
+argument so let's just use it by saying
+final and then what I'm going to do is
+use the other provider this time so if
+you take a look inside the products
+provider file we have the reduced
+products provider so I'm going to copy
+that and go back over here here I'm
+going to call this variable cart
+products though because essentially
+we're in the cart screen and later on
+we'll be outputting cart products
+instead not just the reduced ones so
+let's set that equal to ref which we get
+access to automatically then use the
+watch method on that to watch a provider
+that provider is going to be the reduced
+product provider now we need to import
+this from that file that products
+provider file for this to
+work but now we have that we have a
+value for C product and we can use that
+now inside this template so we're going
+to Output them inside this column now
+because we have a list of products right
+here we actually want to map through
+those and output the children based on
+that so instead of hardcoding a list
+right here we're going to say that
+children is going to be cart products
+and then we're going to use the map
+method to return a bit of template
+essentially or a widget tree for each
+one so we are are going to take in each
+product into this callback function and
+then inside here return a bit of
+template for each one now we get a red
+squiggly line right here and that's
+because this doesn't return a list and
+we expect a list right here so we can
+just use two list right here to return a
+list we still get a red squiggly line
+and that's because we're not returning
+anything inside here I think so let's
+return something and it's going to be a
+container that we return right here all
+right we still get a red squiggly line
+methods can't be inv in con all right
+okay so we have this constant right here
+which we need to get rid of cool okay so
+inside this container then we want to
+basically output a row for each of the
+products now before we do that we're
+going to add some padding to The
+Container so we'll say padding is going
+to be const Edge insets and then only
+the top and bottom so top is going to be
+10 pixels and the bottom is going to be
+10 pixels as well
+after that we need our child which is
+going to be a
+row and inside here we need some
+children which is a list of widgets all
+right so like I said for each product
+inside this list we want a row and
+inside that row we want I think three
+things an image we want the title and
+the price so what I'm actually going to
+do is just copy and paste this from my
+course files because we know how to do
+all this so we have the image asset
+which we use the product here for and
+use the image property on that so that's
+the path to the image then we give it a
+width and height as well then we have a
+sized box with a width of 10 pixels just
+to give us some space after the image
+before the product title which we output
+next and then we have an expanded widget
+with a sized box inside it and what that
+does is fill up the row space so this
+sits on the very right of the row so
+we're going to have the image and the
+title on the left and then on the right
+we're going to have the price way over
+here so if we save this now and then go
+to the cart page hopefully yeah we can
+see all the products in the cart and
+these all the ones that are less than 50
+in price so you can see it's filtered
+some of those out but either way that's
+working now we have consumed a provider
+inside a stateful widget by using this
+widget right here consumer stateful
+widget or this class rather
+and then this thing right here consumer
+state in both of these instances and
+then we get access to the ref
+automatically inside the build method
+where we watch that provider we grab the
+data from it and we use it down here
+awesome

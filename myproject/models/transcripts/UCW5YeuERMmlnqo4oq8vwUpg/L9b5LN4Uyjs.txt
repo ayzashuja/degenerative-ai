@@ -1,0 +1,152 @@
+all right then so the first thing we're
+going to do with River pod is to make a
+simple provider now what is a provider
+well a provider is the main building
+block of something like River pod and it
+acts as like a central place that we can
+Define and encapsulate State and then we
+can provide access to that state to
+multiple widgets within the application
+now there's a few different kinds of
+providers that we can make in River pod
+we can make readon providers which just
+allow read access to some state or
+computed V you we can make Notifier
+providers which allow changes to the
+state and then they notify widgets which
+consume the state when those changes
+occur so they can rebuild we can make
+future providers which are for working
+with asynchronous data so forth and so
+forth to begin with we're going to make
+a very simple provider which just
+provides a simple readon value and that
+value is going to be a bunch of products
+which we can then consume on the home
+screen to list them all out in a grid so
+first then we need to make a new file
+for this provider and then make a list
+of products which we can then register
+in that provider so I'm actually going
+to make a new folder first of all in the
+lib directory called providers and all
+the providers are going to live inside
+here inside this we're going to make a
+new file called products
+provider. Dart so we're going to make
+our provider inside this file but before
+we make the provider what I'd like to do
+is create some kind of list of products
+using this product model that we have
+over here remember where each product
+has an ID title price and image so we're
+going to make a list of those products
+and then inside the provider we can grab
+that list and return it so let's make a
+new list by saying const and we'll call
+this all products I'm going to set it
+equal to something before we do that
+what I'm going to do is type this by
+saying it's a list and then inside here
+it's going to be a
+product I can spell this product we're
+going to click on this to import that
+product model at the top like so and
+then we set it equal to a list inside
+the list I'm just going to paste in a
+bunch of different products so each one
+is a product object with an ID a title a
+price and also the image property which
+is a path to the image file so we can
+see shorts.png Karate PNG jeans Etc all
+right so that is our products done all
+right so the next thing we need to do
+now is to actually make a provider which
+can provide this data to widgets within
+the application so to do that we can
+make a new Final value which I'm going
+to call product provider because we're
+providing products right and I'm going
+to set that equal to a provider this is
+something that comes from the flutter
+riffer pod package so if you click on
+that option it should Auto Import that
+package for us at the top of the file
+now this provider is probably the most
+basic kind of Provider that we can have
+and it's just going to provide a
+readonly state value to whatever widget
+wants to consume it
+now in order to do this we need to pass
+a function as an argument to the
+provider and that function itself takes
+in an argument called ref which we're
+not going to use yet but we will do
+probably at some point later in the
+course but inside this function all we
+need to do is return the value we want
+to provide in our case that's the all
+products list we created up here so we
+can just say return all products and
+then at the end a semicolon and what
+this will do is provide this read only
+value you to whatever widget wants to
+consume this provider in the future and
+this is the general pattern you're going
+to find with different kinds of
+providers where within them we return
+some kind of state value that we want to
+provide so this is a really simple
+example so let's make another read only
+provider which will also return a state
+value but this time we'll return a
+computed value based on the products for
+example we could just return all the
+products which have a price less than 50
+so then below the this one I'm going to
+make another final variable this time
+it's going to be called reduced
+products provider like so and again we
+set that equal to provider and to click
+on this right here and inside this
+function we're going to return the
+product but this time we're going to use
+the wear method on the products to say
+only return the products where the price
+is less than 50 for example so it just
+gets a subset of the products and
+returns those so let's say return
+and then all products use the wear
+method which f a function for each
+product which I'm going to call P we
+take it in as an argument right here and
+then we do a check here and return
+either true or false so I'm going to say
+if p. price so whatever product we're
+currently iterating inside here if that
+is less than 50 then we're going to
+return true right here aren't we and in
+that case it's going to be kept inside
+the return value the return list and if
+not if the price is greater than 50 then
+this returns false and therefore it's
+essentially going to be filtered out of
+it so we're not returning that and this
+way we're only returning products where
+the price is less than 50 now this
+actually doesn't return a list this
+returns an iterable this wear method so
+we have to turn it into a list by saying
+to list and invoking that method at the
+end and that's pretty much it so now we
+have two providers we have this one to
+provide all the products and then this
+one to provide a subset of the products
+where the price is less than 50 and
+that's called reduced products provider
+so we have those two providers now but
+we're not doing anything with them but
+we'll save this file and in the next
+lesson what we'll do is we'll try
+accessing this provider or consuming
+this provider data inside our widgets

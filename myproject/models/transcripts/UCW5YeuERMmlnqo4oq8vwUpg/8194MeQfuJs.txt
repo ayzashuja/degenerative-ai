@@ -1,0 +1,173 @@
+okay then gang so to start this all off
+we're going to be using a starter
+flutter project I've created with the
+main skeleton of the application already
+fleshed out so that we can just focus on
+the river pod side of things so you can
+grab that start a project by going to
+this GitHub repo right here flutter
+River pod tutorial which I'll leave the
+link to down below the video and then
+once you're here you can select the
+starter project Branch from the branch
+dropdown so this Branch contains a Bare
+Bones flutter project with just a couple
+of screens already set up and ready to
+go to download it just go to the code
+button and hit it and then select to
+download a zip folder of this Branch
+once it's downloaded unzip the folder
+and then open up the project in vs code
+so then when you first open up this
+project in vs code you're probably going
+to get a bunch of eras all over the show
+but you can most likely fix all of those
+by opening your terminal in the root
+directory of the project and typing Pub
+get and then hitting enter and this
+command basically just resolves all the
+project dependencies for us anyway once
+you've done that let's take a little
+tour of this St application so I'm just
+in the main. file right here not much
+going on we just have the run app
+function which registers the root widget
+my app that's down here stateless widget
+which just returns a material app widget
+where we specify theme data and a theme
+color and then down here we say for the
+home screen use this home screen widget
+now that is over here inside the screen
+screens folder and inside the home
+directory so if we take a look at that
+we can see this is a stateless widget as
+well now down here we return a scaffold
+so we can have an app bar with a title
+garage sale products and then for the
+actions we have the cart icon widget now
+that's a widget I created which I'll
+show you shortly inside the shared
+folder but it's this thing over here the
+little picture of the shopping bag and
+this blue bubble where eventually we're
+going to show the number of items in the
+cart now down in the body we have
+padding which wraps grid view Builder so
+this is the grid view Builder thing over
+here we have eight items inside it we
+manually set that for now just so we
+have some things on the screen but later
+on we'll let the number of products
+dictate how many items are in the grid
+then we specify a few properties down
+here for the grid like the cross AIS
+count the main AIS spacing and so forth
+and then down here the item Builder
+itself which returns a container for
+each grid item with a bit of padding and
+a color which is kind of like a blue
+gray and we make it really faint which
+is what these are over here by using
+this with opacity property all right so
+that's the home screen eventually we're
+going to Output all the products as
+items in this grid okay so we also have
+a cart page if we click on this widget
+over here in fact I'll show you that
+first just inside the shared folder
+carts icon we can see down here we
+return a stack which allows us to stack
+different items on top of each other the
+children right here is an icon button
+which is the cart icon
+if I can find the icon it's this one
+right here shopping bag outline that's
+what you saw up here but on top of that
+we have a positioned widget so we can
+position it on top of the cart and then
+the child is a container with a width
+and height and a color of this blue
+accent so that's that little blue circle
+right here and we make it circular by
+using this border radius so like I said
+eventually we'll show the number of
+items in the cart over there now if we
+click on that we go to the cart screen
+which is inside the cart folder cart
+screen over here so this is this time a
+stateful widget because we have a little
+bit of State in there we're not really
+going to be using that I just wanted to
+create a state for widget so we can
+demonstrate some things later on but
+inside here we have the build function
+which return to scaffold so we can have
+an app bar and a title and then down
+here for the body at the moment it's
+just a container with a column inside it
+and later on inside this column we're
+going to Output all of the carts
+products so on the home screen we're
+going to be like add this one add this
+one add this one then when we go to the
+cart we're going to Output a column of
+those items in the cart hope that makes
+sense all right so that's the screens
+and the widgets which we show over here
+we also have a models folder if we open
+that we can see a product model right
+here just a simple class called product
+and we have four different fields we
+have a string ID string title an INT for
+the price and a string for the image
+this will be a path to an image asset
+which are all found in the assets folder
+by the way inside a products folder and
+we have these different images right
+here backpack drum guitar jeans Etc just
+little icons basically they're all going
+to be listed here and then obviously
+when we add them to the basket they're
+going to be listed here as well we're
+going to show those pictures for each
+product okay so I think that's pretty
+much it so that's the starter project
+and what we're going to be doing is
+basically adding provider or not
+provider sorry River pod to this to give
+us some kind of Global shared state
+which is going to be the cart items all
+right so I've already run this project
+by going to this icon over here if you
+open the main file and going to run
+without debugging you have to have your
+emulator running first of all and again
+if you don't know how to do any of this
+make sure you definitely check out my
+flutter masterclass series first of all
+okay then so the next step is to install
+River pod into our project so I'm just
+on the river pod docs here to see how we
+do this and on the getting started page
+if you scroll down a little bit you're
+going to see a bunch of different River
+pod packages that we can install now
+we're going to be using a few of these
+packages as we progress through the
+course like the river pod annotation
+package and the river pod generator one
+but for now just to get started with the
+basics we're going to be using this
+flutter River pod package right here so
+copy that command and then head back to
+your code okay and then once we're here
+we can open up the terminal and you want
+to paste in that command and press enter
+this is going to install the flutter
+River pod package for us it was actually
+already installed for me but you'll need
+to do it to make sure it's installed in
+your project probably but anyway now we
+can start using flutter River pod and
+creating what's known as providers and
+we'll do that in the next lesson

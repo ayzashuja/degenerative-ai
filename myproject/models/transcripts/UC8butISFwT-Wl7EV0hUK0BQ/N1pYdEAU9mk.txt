@@ -1,0 +1,2952 @@
+[Music]
+n
+[Music]
+welcome back to the free C Camp podcast
+I'm Quincy Larson teacher and founder of
+freecodecamp.org each week we're
+bringing you Insight from developers
+Founders and ambitious people getting
+into Tech this week we're joined by none
+other than Ben Awad who is a developer
+he is a prolific Creator on both YouTube
+and Tik Tok and very importantly he is
+working on on a new game which already
+has like you know more than 100,000
+installs uh in the app store called void
+pet which I would describe as emotional
+support
+Pokemon thank you Quincy thank you for
+having me yeah it's great to have you
+here man like uh I checked my calendar
+before we joined this call and the last
+time you and I talked was four years ago
+and that's like a sixth of your life
+right like if you don't want me asking
+how old are you I'm 26 yeah so need the
+divisions yeah so like that's a lot of
+time for Ben to be out of the fold uh
+sorry I'm a Ben Folds fan with with the
+freeo camp Community uh but you've been
+getting a ton of stuff done but first I
+just want to address the fact that like
+if you look at Ben Awad Tik Tok if you
+look at Ben Awad YouTube like production
+has slowed down a whole lot I just want
+to make sure that the mafia didn't like
+do like a a hit on your entire family at
+their family reunion like in Punisher
+and that there's like that everything is
+cool sorry that we can't talk about it
+anymore all right all right man unless
+you if you want to continue living we
+can't talk about it okay okay m is the
+word the the the the short answer is
+I've just like been very busy working on
+void pet the startup and it's like very
+hard to like run and take care of two
+babies at the same time and social media
+as its own baby and its own I always saw
+YouTube and Tik Tok and Twitter as a
+thing that like I invest into and I put
+thought into um and so once I stop
+thinking about those things it's harder
+for me to like do them in autopilot I
+can't autopilot post basically I I like
+put a lot of thought even though it may
+not seem like it at times um and now
+that my thought is elsewhere it's like
+not happening at the moment I'm never
+I'm going to post more in the future at
+some point in time I don't think I'm
+done with social media period I still
+like social media and posting and making
+videos and talking about tech but
+currently I'm just like so swamped that
+it's it has been happening as you've
+been seeing and as everyone else has
+been seeing as well and they're like
+when Ben when's the next video I'm like
+I'm not even planning a next video at
+the moment unfortunately wow yeah well I
+mean that's totally cool that like you
+have two high standards to just put out
+you know busy or like merely serviceable
+content you want to put out the really
+top shelf Ben aad uh and you're not able
+to dedicate the time and attention to be
+able to do that right now so um maybe we
+can talk about uh social media just
+because like a lot of people are saying
+like social media is dead like uh or
+it's it's definitely like a shadow of
+his former self Elon Musk has been like
+doing weird stuff with Twitter I refuse
+to call it X because it's probably just
+going to be sold to like some other
+company in a few years and like they'll
+Rebrand at Twitter so why bother like
+switching um you know obviously people
+are very paranoid about using like
+Facebook products based off of like
+Cambridge analytica and the many many
+scandals that have transpired and is
+this just like a company who I that I
+want to support personally like for me
+that the answer is not really um and
+then at the same time you've got uh you
+know Tik Tok might be banned in the US
+hopefully not I am not I'm like a very
+anti-censorship and I think it's a
+horrible precedent for websites to be
+just wholesale blocked like they are in
+China for example so um so obviously I'm
+very much loading this question is
+social media dead but but like what do
+you think about the social media
+landscape right now as somebody who has
+I don't know hundreds of thousands maybe
+millions of of like followers on Tik Tok
+and some of these other platforms I mean
+I think the dope thing right now is
+Twitter's paying you money to post and
+that didn't happen like years ago and
+like that it's like a huge motivator
+because if you were just like derping
+around and putting like funny memes on
+there you now have the potential to like
+make actual money now unfortunately it
+is like kind of pennies and you have to
+be like really getting out there to like
+get any kind of return so like that is
+kind of like the downside too but like
+the plus side is like now every single
+one of like these social media websites
+is like you can make money just like
+posting on them that's very cool that's
+very motivating and so I really like
+that part like Makey bu is cool for just
+like making videos and sharing it on
+that I will say like I think I have had
+less uh I've been enjoying like Tech
+Twitter less than I used to and I didn't
+know just because I've been like busy
+thinking about other things or like the
+conversations have like changed a little
+bit I'm like less interested or I'm just
+like at a different point in my Dev
+career that I find it less interesting
+to keep up with everything or to to
+watch everything and also I don't I just
+don't know if like uh like things are
+like stalled out a little bit I feel
+like when I started it was just like
+JavaScript Frameworks Chang so often and
+blah blah blah blah blah and then I
+learn react and then I just been using
+react for the last like four years or
+whatever like I feel like uh little
+things have tweaked and I have to keep
+upgrading xgs and that's annoying but
+like for the most part things have been
+keeping like pretty low on the like
+major changes I mean there's been some
+pretty interesting stuff happening too
+but that's that's another can of worms I
+still find it exciting I also think um
+now you have so many different options
+if you don't like Tik Tok go make a
+short on YouTube if you don't like
+YouTube go make a short or real on
+Instagram so I think the cool thing is
+there's lots of options as well I'm a
+big fan of LinkedIn I think LinkedIn is
+slept on um you don't get paid unless
+there's like you do an accelerator
+program but I mean maybe join the
+accelerator program um but also I think
+what they make up in or they don't have
+in monetization yet I think they'll have
+it at some point you just have like a
+ton of reach on LinkedIn in my opinion
+comparatively and very few people are
+taking advantage of that that I would
+suggest that if you're interested in
+this sort of thing yeah uh so a couple
+points there first of all getting paid
+on Twitter yes free C Camp does get paid
+like Dam it's pennies uh I mean we get
+like a few million impressions a month
+on the free Camp Twitter uh and I think
+it barely pays for the eight $8 a month
+right the year sub Bas verifi check but
+I mean if I were like a comedian or
+somebody who is intentionally going out
+there trying to create viral content I
+imagine potentially being able to buy a
+few meals a month off of that money
+right probably making a few Hondo yeah
+yeah yeah so for me like it's kind of
+irritating because now the blue check
+mark associated with free Camp is like
+almost like a pledge of allegience to
+Elon Musk in the sense that we're
+willing to like pay but like I've seen
+the algorithm that they open source like
+assuming that that's actually how it is
+and the calculus is always hide it too
+oh you can check mark there's an I don't
+want to do anything that reduces our
+distribution Within Twitter oh yeah
+distribution it's purely for what you
+just said in the I don't want to look
+like I'm pledging allegiance to Elon
+they have a setting in there that you
+can actually hide your check and I I
+don't I would assume it does not affect
+your your like where that like because I
+know you if you don't get the plan they
+don't show you in the foru or whatever I
+think you still get shown in the foru
+other people just don't look at you and
+be like man that's a verified person so
+there might be some like you know that I
+I think a lot of the people like I think
+LeBron James and like a lot down now a
+lot of people out there who were really
+critical of it have already left Twitter
+anyway so yeah I don't think
+it'ss can always hang out there yeah
+we've been using threads a little bit we
+post occasionally on there uh we haven't
+seen like really high engagement but you
+know we'll see what happens like we
+definitely opened that account when it
+got announced just in case um yep yeah
+and what you said about like you know
+Instagram reels and uh YouTube shorts uh
+in addition to Tik Tok you're right like
+that short form video is is almost kind
+of like a commodity that you can just
+slot in as a Creator how do you think
+about like do you think this video is
+going to do really well on Tik Tok but
+it's too out there for shorts I actually
+do think like that I think the I think
+each platform has their own meta and
+each almost like Community or like style
+of video and if you just take take 10
+minutes and scroll through your YouTube
+shorts feed scroll through your reals
+feed and scroll through your Tik Tok
+feed you're going to see very different
+styles of video and those are the
+different style videos that do well on
+each platform and unless you're like
+really niched down and you've already
+like liked a ton of posts and you're now
+just getting recommended very similar
+content even in the same niches you'll
+get different flavors and different
+trends that I do think like that I would
+still like you know YOLO and you know
+post on some other plat like you know
+post the same video even if I don't
+think it's going to be the best for Tik
+Tok or the best for YouTube shorts cuz
+also even though you think that it's not
+going to be the best part of social
+media is like you never know what your
+hits going to be um and so you
+just do the play the lottery see what
+happens yeah it's it's it's like how
+many appats you have right like uh you
+missed 100% of the shots you don't take
+there you go says Wayne Gretzky says
+Michael Scott right um so let's talk
+about uh what you've been doing on
+LinkedIn because LinkedIn is a platform
+I always think of it as like button-
+down Twitter like uh to some extent
+everybody's there but it's instead of
+eating it a Taco Bell you're eating it
+like the Four Seasons or something and
+uh people are like much more concerned
+about how they're perceived and it is
+definitely less like free flowing uh but
+there is a dir of really good content
+there most of it is just like hey I got
+promoted like and and that's cool that's
+actually really good content on LinkedIn
+to be honest and that's why I think
+there's opportunity and I think like
+what you just said is like the perfect
+reason why LinkedIn is great is because
+everyone thinks of it as buttoned up and
+I think my biggest tip for anyone who's
+trying to do things on LinkedIn is
+pretend LinkedIn is Twitter and now
+start posting and if you can use that
+mindset and uh I think the
+contrast makes your post stand out a lot
+better and people like would rather
+consume fun content doesn't really
+matter what platform they're on they
+would like like if they're scrolling on
+LinkedIn they're already in a weird
+place like if that's what you're doing
+that day and like if you see a good post
+that's like funny you're like yeah give
+me that a thumbs up I don't need to give
+like you know the fifth thumbs up to the
+person over here that's like yep just
+got promoted there's like you know 70 of
+those you know put some content on there
+for people that you know that are stuck
+strolling on LinkedIn give them some
+something yeah well I like I like the I
+just got promoted posts personally just
+because that that like reminds me of
+what social media used to be all about
+like it used to be about Facebook like
+people like we just bought a house you
+know like those types of posts feel good
+positive energy real updates from people
+that were not just designed to give
+engagement but we actually designed to
+update friends and family and and seek
+you know validation like this is good
+right this is a big deal right um and
+and yet like uh I Facebook has become at
+least the last time I used it it was
+basically just a bunch of like you know
+news articles and stuff like that and I
+think they've tried to move away from
+that but yeah my mind it'll always be
+like the the misinformation machine
+essentially um let's talk about your
+personal history though because
+everybody comes to software development
+with a different you know background
+like different baggage so to speak you
+grew up here in DFW I actually live in
+DFW are you're in Texas now right yeah
+no I'm in Texas now I'm in Austin which
+city Austin okay so you're you're in the
+uh the the Hipster Texas exactly exactly
+so uh dot yeah so maybe you could tell
+me a little bit about um your childhood
+here in Texas uh just because I like to
+keep some chronology when I talking so
+we're not just constantly jumping around
+through time frame like we don't want
+this to be like the movie momento we
+want it to be like every movie before
+momento yeah but yeah know I was raised
+in Austin um and I played a lot of
+sports growing up funny enough and I
+played a lot of video games League of
+Legends was like my go-to in high school
+and I tried pretty much every sport but
+the sport I did best was tennis up until
+a freshman year of high school in which
+case I just left high school and started
+homeschooling the made like remainder
+three years and then I kind of just
+dropped that cold turkey and only played
+League of Legends um and you dropped
+school like like completely you just
+went straight to the league I just went
+straight to the league um and then also
+just uh well I mean it's kind of funny
+so I basically kind of started college
+early because in homeschooling you can
+just do whatever you want and so part of
+the thing you can do is just start doing
+dual credit classes and so you just I
+would just like go to the local
+community college and do like dual
+credit classes which also account for
+high school diploma things and you're
+also starting to get like the easy
+credits out of the way for college um
+what was the just switching to home
+school was it like that pragmatic like
+hey I can get into college and get some
+credits and like was it like I'm just
+trying to Short
+this it actually wasn't like optimizing
+for college in like the sense of like
+getting credits earlier that just like
+happened to be a nice perk that I found
+out later the main one was I just like
+hated school and I was starting to like
+hate learning and that's like a really
+bad place to be when you're like in your
+younger years of life and I just like
+was like dreading it and my mom saw that
+and she was like all right like let's
+see if we can like re rekindle some love
+for learning cuz like there's nothing
+that inherently you know someone should
+like stop enjoying learning it's if
+they're being forced to do things that
+they really don't want to do and really
+dislike and or like the format's not
+working for them um and I think that was
+very very good for me cuz that actually
+allowed me to like start self-learning
+and like I think that's how I was even
+successful as a programmer whatsoever is
+I got used to self-learning and enjoying
+self-learning and that's like a very
+important skill if you're trying to be a
+good programmer because of just like all
+the things that you have to do when you
+first start um so that was very big and
+then also the cool thing is like that
+allowed me to take a coding class
+because my high school didn't have a Cod
+class but when you're homeschooled I
+could just take a free Muk online and
+then all of a sudden I'm like starting
+on the path for like these interests
+that I might even do in college and then
+turns out I do do that in college and I
+started a computer science degree um and
+funny enough my dad was a programmer so
+I had like had some exposure to like
+coding um like my Dad tried to get me to
+start coding when I was younger but I
+didn't like it and I wasn't that good at
+it and I just I didn't I didn't think
+too much of it I was like no no thank
+you goodbye but I tried again at when I
+was doing homeschooling I liked it a lot
+better um there was like a 5050 chance I
+was going to be a business major in in
+college actually funny enough CU I also
+was like I do not want to sit at a desk
+and code all day long that was like
+something in my head I kind of knew at
+the age of 16 or 17 and so for that
+reason I was very very close to not
+getting a compsite degree but then I was
+like hm the main reason I didn't give
+business I was like even if you get a
+compsite degree I felt like that was
+more valuable even if you decided not to
+code than to get a business degree so I
+was like all right let's go a comps side
+degree anyway and whether or not I
+decide to be a full-time programmer with
+that like we'll see um anyway so I go to
+college and I go to DFW area I go to a
+college called UT Dallas that's rich
+good school yep yep part of the
+University of Texas uh super system of
+uh research institutions Yep they're
+good research school um they're like a
+they're very nerdy school like they
+don't have a football team the thing
+that they Flex is their chess team um so
+it it I was like a good fit for that
+style of school as well um and then
+after college I got my compsite degree I
+actually that's when I started doing
+YouTube like a little bit more seriously
+was like
+maybe May sophomore year of college
+roughly I'd have to go back and stamp it
+somewhere in there and I just started
+doing coding tutorials um of the stuff
+that I was learning in my free time
+because College doesn't teach you webd
+and I always wanted to build things with
+programming that I could actually use
+like that was like the first impetus
+like even when I was learning muks in
+high school I was like okay I want to do
+something with this they taught me Java
+so then the first thing that I built was
+and if you ever tried to build like a
+web application in Java it's a complete
+nightmare so I couldn't I was too
+daunting I wasn't able to do that yet so
+I did an Android app and back then you
+built it with Java not cotlin um for the
+new people out there and yeah I built
+funny and you know probably no surprise
+I built a calculator and some stuff my
+biggest app that I made was the League
+of Legends app of course where you could
+like look up your own sumoner cuz you
+know I was building my interest and I
+was building something I actually wanted
+to use U which I think is really
+important when you're starting so I was
+you know doing that and then I think
+that was that was big and I I kind of
+knew these things early on like I want
+to make things that I can actually use
+so I was starting to do webd because I
+was like that very clearly makes things
+that I can use I can use websites those
+are important um and here I am learning
+like algorithms and I actually enjoyed
+algorithms though so like I I didn't
+have any hate towards algorithms I just
+was like hey could you also teach me how
+to utilize those algorithms for
+something interesting interesting and
+that was the part that was always
+missing um and and the degree but the
+great thing free code camp and all those
+resources out there are there for you
+free to use there's so many things you
+can use now um that you can just learn
+on your own and they are just as good if
+not better than the college courses out
+there that are teaching you random
+things um and you don't even have to be
+in college to use them so use them and
+that's what I did and then then I was
+making videos as I was learning cuz the
+best way to learn something is funny
+enough enough to then teach it um the
+like cycle I learned in homeschooling
+was funny enough I took a class in
+homeschooling that taught you how to
+learn and in that class they were like
+all right this is what you do you you
+know learn something either by reading
+it writing down notes and then you go
+over to the wall and you have to teach
+the wall like what you just learned and
+it it doesn't even matter that you're
+not actually talking to another human
+the fact that you're like trying to like
+synthesize what you learned is the
+important part um so that always stuck
+with me and that's why I like started
+doing it in in college and also I knew
+like if I was interested in doing more
+than just being a software engineer I
+needed to start like my personal brand
+and like started doing like things
+outside of just coding and I knew like
+to start that I had to start somewhere
+and I started with coding tutorials um
+and that is where I started with that
+and then you know that's College I
+graduate and I just start building stuff
+and I don't know if you want me to keep
+going timeline wise they're like no
+let's slow down for a second because I
+mean we just
+covered I did jump jump jump yeah yeah
+so first of all kudos to your mom for
+figuring out that you were burning out
+on learning burning out on school and
+taking the DraStic action of putting you
+in The Homeschool now of course we've
+had lots of homeschoolers on the podcast
+uh Madison Cana never went to any school
+not even un she's like homeschooled her
+entire life right works as a software
+engineer very uh inspiring uh Creator um
+and yeah I mean that's like a dramatic
+decision like I I left school when I I
+was bored with school and I was having
+problems with my family and I just
+basically dropped out uh sophomore year
+and it wasn't like I was just chilling
+playing League I was you know sing my
+car at the Walmart and uh you know for
+about a year and and then eventually I
+got a job where I could like mop the
+floors at a grocery store before they
+opened and like do a bunch of stocking
+and I was able to pay my friend a few
+hundred bucks to like sleep on his floor
+basically that that was like what I was
+doing when I was around that age but um
+it sounds like what you had uh in your
+life going on was you
+had a dad who really wanted you to get
+you into technology to credit to my dad
+he he bought a computer very early on I
+was playing with a computer but I was
+mostly just consuming I wasn't really
+creating with a computer but it sounds
+like later on in your your uh teenage
+years you got really into creating as
+well and using te technology to create
+so y I think that's like super chill
+that uh you were able to do that and you
+were able to like live the dream of
+going and getting a computer science
+degree at like the normal age like the
+traditional student age so you didn't
+wake up like in your mid 20s mid-30s and
+be like damn I don't have a CS degree
+what am I supposed to do right because
+that definitely complicates things
+having a CS degree simplifies the job
+search dramatically right it's it's like
+a proof of concept in you as a developer
+this guy could actually to get out of
+bed for his 8:00 classes and uh you know
+build the homework assignments and pass
+the tests and and get the degree right
+so uh so I think it sounds like you did
+yourself you did your future self a lot
+of favors by uh I tried I tried and
+compounding interest yeah and just a
+note on teaching the wall I've never
+heard of that notion teaching the wall
+but it totally makes sense and it Vibes
+with how I learn personally and how a
+lot of uh people I know learn and that
+is like in medical school they have this
+concept of watch one do one teach one so
+you watch another physician do a
+procedure then you yourself do it and
+then you teach another physician how to
+do it so it's like kind of like that
+three-step process um and it sounds like
+you're doing something similar in terms
+of synthesizing what you've learned uh
+by teaching it so that of course leads
+us to your very prolific programming
+tutorial career which includes uh among
+other things among many other things uh
+a react native course that we published
+on free Coke camp like five years ago a
+long time ago yeah I mean react native
+is probably moved on a little bit from
+there but if you just want to learn the
+foundational Concepts and stuff Ben's
+got you covered with this comprehensive
+4our course uh but yeah I do want to
+hear a little bit like let's jump back
+into the chronology uh i' just like to
+take a moment to digest everything like
+all the knowledge you just
+dropped let's talk about like post call
+college and so you're graduating with
+you were able to graduate with a
+computer science degree I did graduate I
+have a bachelor's of computer science
+and like you said I did like tee myself
+up very well to then like go and get a
+software developer job or maybe like
+some job in Tech um but funny enough I
+just decided to not even use my degree
+whatsoever and I just started like
+continuing making YouTube videos and on
+the side I started like building
+different projects now the first project
+that I built and part of part of why I
+built this project and future projects
+is I felt like I didn't have good ideas
+and if I had good ideas I would start a
+c company and like start doing that but
+I didn't have any good ideas so I was at
+a loss so I was like all right I'll just
+build somebody else's good idea or
+million dooll idea and if you ask a
+friend or family uh member they always
+have million dollar IDE ideas so I was
+like I'll just build one of their
+million dooll ideas so what I started
+with is my mom really
+needed a way to just like keep track of
+all our recipes she really likes cooking
+she has like over a thousand recipes
+that she bookmarks and keeps and y y so
+I buil a product called saffron that's
+still live today people still like using
+it she still uses it I still use it um
+but that was the first project I ever
+built kind of on my own that was like a
+full complete website and later became a
+react dative app um that I built as I
+was doing like these kind of coding
+tutorials on YouTube and I kind of just
+split my time doing both of those things
+and that was just kind of what I was
+interested and I did like a small bout
+of like Consulting on the side to make
+some money as well um and then kind of I
+just continued that like blend of doing
+things for quite a quite a bit of time
+and after that project I was like okay
+if I can't think of any good ideas so I
+didn't think of any good ideas after
+that either I'll just make a lot of bad
+ideas because through making these bad
+ideas I'm sure one day I will come up
+with a good idea and so I started making
+a lot of joke projects and if you follow
+my YouTube You've you've seen some of
+them I mixed Instagram stories and the
+most popular editor vs code and I was
+like okay what if we do the same thing
+and we do it with Tinder and it's dating
+for programmers and then I was like what
+if you mix Clubhouse and you do it on
+the web and you mix it with does because
+Elon is pumping Doge quy like I just
+like started making these things cuz I
+was like I house just interject
+Clubhouse for anybody who has forgotten
+about it or like forg at this basically
+it was like a party line type app where
+like you basically it's it's basically
+Twitter spaces if you ever use Twitter
+spaces uh but but people would all call
+in and so you can imagine having like do
+which is like a kind of a weird internet
+meme way of saying like sh knew
+IBU yeah it's a dog a cool dog it's like
+a very adorable Japanese breed of dog um
+and uh yeah for whatever reason it took
+off especially among the cryptocurrency
+enthusiasts and there was like Dogecoin
+and there was uh which was created as a
+joke but actually has like a lot of
+monetary value much to the chrin of the
+Creator who like sold all his Dogecoin
+to buy like a used Toyota or something
+like that and then uh there there's like
+Sheba enu coin which is as like that
+look a little bit more of a joke yeah
+yeah I mean like a lot of these are just
+like hey it's a meme get it like now buy
+some you know but uh but so basically it
+was like you were trying to hop on the
+Doge peakiness uh the fact that the fact
+that it was really picking up steam any
+crypto related in the project funny
+enough and I never even introduced any
+Dogecoin that was like a potential later
+thing it was literally Japanese dog
+themed Clubhouse on the web was like a
+better way to describe the like state of
+the product when I was buing it's an
+audio product though like do you have
+like Shea you's barking or like how do
+you they were barking but like that was
+the logo and that was like there's like
+an energy to being a doge and so there's
+like that energy was imparted through
+the website um and so like it's one of
+those things where like Doge speaks to
+some people and it doesn't speak to
+others so if it spoke to you you
+understood and you connected and you
+know it doge is almost like a symbol of
+like the underdog as well and like at
+the time Clubhouse like only was on iOS
+and so they were leaving out the entire
+population of Android users that wanted
+to uh enjoy it so yeah that was a pretty
+El latest thing for them to just say oh
+you're not rich enough to own an iPhone
+you can't use our
+app everyone starts on I iOS and they
+just leave Android in the dust sad yeah
+yeah Android you'll get a lot more
+installs you won't necessarily get more
+sales but you will get a lot more
+installs if you make it a multiplatform
+which you can do using uh react native
+uh or or flutter which we use for our
+mobile apps uh not a flutter fan huh uh
+or or you can just do it like uh use
+Swift for your iOS version and use uh
+cotlin for your uh cotland and you know
+all these sdks for your Android version
+and you can you can just have like a
+crazy nightmare of like trying to get
+feature parody between the two uh yeah
+flutter yeah so that's very cool so uh I
+never thought of Doge as the underdog
+but it makes sense because like I think
+a lot of the crypto space people think
+of themselves as kind of like the
+underdog to traditional financial
+institutions like Banks and stuff uh so
+now that gives me a new lens to view the
+entire phenomenon of Dogecoin through
+yeah so you're building all these quote
+unquote bad projects like uh the best
+way to build bad projects is or good
+projects is build a bunch of bad
+projects and it turns out wow one of
+these bad ideas was actually a good idea
+like Airbnb who thought that was a good
+idea but apparently it is a good idea
+right yeah people can crash on our our
+living rooms in this case I'd almost
+even describe them as a tier lower than
+that because I didn't even see a future
+for some of these things I think Doge
+house is different I actually did see
+somewhat of a potential future for that
+product Doge house was the name of the
+clubhouse Doge thing um I did
+potentially see a future for that but I
+kind of knew going in Tinder for
+programmers and Instagram stories for vs
+code there weren't really work there was
+not like a future there like I did not
+make that without idea that there's a
+future there and maybe maybe some other
+people make are making projects that way
+and it still works out but I like I see
+the inherent flaws here and like I'm not
+even like trying to like you know peel
+back or like handle the flaws I'm just
+like the flaws exist this is a flawed
+product like I'm making this flawed
+video as to practice my coding skills
+mixed with it's a funny joke and like
+maybe this will give me an idea for a
+not flawed project um down the road or
+or next um in worst case scenario
+somebody finds it entertaining or
+inspires them through the video through
+the content um so it was I always
+thought as like it was like a win-win
+either the product actually did better
+than I thought it would do which none of
+them did but I mean actually some of
+them did like a little bit better than I
+thought I will admit like I ended up
+selling vs code stories for some money
+and so like that was cool Ione never
+expected that and like there's like a
+couple people that are like on their way
+and potentially going to get married
+through like of the dating app I made
+and I was like I didn't think anyone was
+actually going to literally use this and
+connect with anyone um and so there
+there were some cool things but here's
+the thing even though these were joke
+produ
+projects I would always engineer them as
+if they were like legit and I always
+because that was my favorite part I
+actually really liked building so like
+for example I it was so silly of me to
+do this but I just like could not do
+this of like when I was making the like
+dating app for programmers I made an
+extension for vs code you could type in
+but then my brain was like well if
+somebody matches with you and you are
+not at your computer you wouldn't see
+the match and then that'd be so
+disappointing if you left them for like
+hours because you had to wait the
+weekend and then you're back at your
+computer or whatever so I was like
+obviously we need a mobile app so you
+get a push notification when you match
+and so then I built an entire react
+native portion of that just to support
+that and it's like yeah you might as
+well be able to swipe on the app as well
+so then all of a sudden we now have a vs
+code and whole reactive thing I just
+like literally couldn't help myself and
+it was like that is how it's going to be
+I guess and so I was building so it
+sounds like your bad projects like
+you're first you're building them but
+then they're kind of building you and
+bossing you around it's like okay well
+you committed to having you know Tinder
+exension to each one that I was like
+yeah that just makes sense so it's like
+you're you're almost kind of like
+bullying yourself into learning a whole
+lot I guess you could describe it that
+way but yes like that was the other
+thing too like I got a lot better at in
+Ing and a lot build better at building
+projects through doing this cuz going
+end to end is very very like helpful and
+useful especially when you're like okay
+now that I've done going into end what
+would I do differently this time and I
+would rework parts of like my stack and
+what I was using for the tech each time
+and each time I'd like learn something a
+little bit different and I like started
+to develop over time like this toolkit I
+really really
+liked yeah and so having built several
+of these projects and having sold one
+that first of all talk about that
+experience I don't know if you could
+talk about the numbers there's some
+clause in the contract or anything I
+mean I don't even know if I publicly
+said it already it was for $9,000 so it
+was not like a like oh yeah exit I'm
+chilling on a beach exit but it was like
+I don't need to think about this project
+anymore and I was not planning on doing
+anything else with this project so I can
+just liquidate and you can have this and
+it was just I got a random email that
+somebody was interested and I was like
+yeah you could have it
+that's so cool I'm not trying to build
+on top of this um and also there was all
+kinds of problems with it because as
+soon as you allow somebody to upload
+images as you can imagine what somebody
+would nightmare exactly Camp will never
+have an image uploading you know I I
+want to deal with that so I was
+like you can happily take it off my
+hands yeah well that I don't know many
+people whose's random like side projects
+especially ones that were intentionally
+bad ideas uh to start with that they end
+up going on to sell uh I mean that's
+definitely a feather in your cat man uh
+I me I think the there there's like
+technically some like potential there if
+like the idea is some people were
+talking to me about this at the time
+which is like all right imagine you have
+like uh you're like selling it to
+businesses and the businesses like they
+really like when all the developers are
+like friends with each other and stuff
+and they're like that's how they do
+their daily standups or they're sharing
+a piece of code they're just like doing
+a story easily and they're and out
+shares to their whole team so there like
+theoretically was some potential there
+maybe I didn't feel like building that
+that sound boring to me um but yes that
+was that was a fun
+time yeah very cool so you've built a
+whole bunch of bad ideas and uh without
+jumping too far ahead uh like you
+ultimately did build an app with uh your
+co-founder I think her name's Lynn uh
+that has really like picked up steam uh
+do you want go ahead am I missing
+anything jumping straight to that no we
+can jump we can jump straight to void
+pet um void pet definitely has been the
+most successful project I've ever worked
+on um this was not my idea this was
+Linda's idea and the reason I even
+started working on this project and I
+like knew it was good is because the
+project just like did had like such high
+conversion on social media it went viral
+on Tik Tok and the number of people that
+joined a wait list and like tried to
+like we had a password protected website
+that we made a Tik Tok about how the you
+know look at this game that has a
+password on it a ton of people tried it
+I think it ended up being 2 million
+people attempted the like uh website
+password and then 100K of them actually
+join our Discord from that and I'd been
+doing social media for a very long time
+not a very long time but like two years
+a year um and I had like maybe 10,000
+15,000 people in my Discord so the fact
+that this project had 100,000 people in
+the Discord I was like oh my gosh like
+this is this people want this thing
+people really Vibe with emotional
+Pokemon like that just that idea that
+concept I never thought of myself as
+making a game ever cuz I didn't want to
+be the person that um spent two years
+making a game in my room publishing it
+and then no one used it like that was
+very scary because I felt like I was
+that type of person I was always the
+like on the side of the spectrum of I
+was building too much first and not
+validating with customers and then I was
+just sad cuz I spent all this time
+building and then no one wanted to use
+my thing so like gaming was very scary
+to me because it was like oh instead of
+finding out whether your products bad in
+like two months you find out in two
+years and that was too scary for me but
+this was different because I was like
+whoa there's all these people I kind of
+know they want it like this there's like
+at least this kernel of motivation and
+so void pet was also like the easiest to
+like start doing and it was like the
+first backwards project because the Lunt
+was there before I built it whereas
+before I always built first and then was
+like Hey guys look at this thing I built
+this was like people are waiting for
+anything to be built that is emotion
+related pets and we were like all right
+let's just build this thing um and so
+that was exciting to me it's like now I
+just get to do the thing that I like
+which is building yeah so so this time
+it's different because you've gotten
+some form of validation before you start
+building
+and you can be pretty confident that
+there will be an audience for it so I
+mean to some extent like that edifies
+the notion of just spamming ideas out
+there and seeing what sticks and then
+building just having a a landing page or
+some sort of like Discord sign up how
+did the password page work people had to
+guess the password or or just like
+people had to guess the password we just
+once they guess that they told their
+friends so if so this is how it was
+structured if you did not know the
+password and the password was very
+simple I think it was literally the name
+of the game at the time or like it was
+actually no it wasn't the name game so
+void pet used to be called nightmares um
+and then we renamed it to void pet
+because void pet has way better SEO and
+we got the do com like it there's so
+many reasons why void pet was a better
+name than nightmares nightmares like for
+an emotional support too yeah yeah
+there's there's plenty of reasons why
+nightm like Todd McFarland's or not uh
+yeah Tom Farland nightmares you know
+something like that uh like having be
+edgy re nightmares got rebranded so the
+password to the website was nightmares
+and so I think part of it was like if
+anyone knew the old name the website
+they like could just like get into the
+game so we didn't even try to make the
+password like 100 characters and it was
+like you were cracking this thing it was
+like a client side form like this like
+any like there was no attempt to like
+try to make this that difficult um and
+like some people would go back in the
+Tik toks and like figure it out like
+that's the password and crack it and
+then eventually we ended up doing making
+it so like um if you get the password
+wrong get a little message it's like hey
+do you want to find out the password
+join the Discord and you can ask people
+in the Discord and then through that
+people join the Discord and then
+somebody finds the password and they
+share it and they get in through the
+game and then that was like the whole
+that was the whole thing as that yeah
+that's awesome so we were talking
+earlier like we we we're going to talk
+more about void pep but like let's talk
+about Discord because yeah that is like
+you know fertile ground for getting a
+whole lot of people talking to one
+another and uh
+there are probably millions of Americans
+uh probably millions of people in other
+countries too that open Discord every
+single day and they're going to see like
+that annoying Red Badge notification
+they're going to go silence all
+notifications or they're they're going
+to maybe be like hm why am I getting a
+notification and it's just then doing
+that at everyone hey check it out like
+new release void pets or something but
+that is a way of getting people's
+attention right it's the new newsletter
+it's the new newsletter I like it and it
+doesn't cost you $700 a week like my
+newsletter cost yeah that one is tough
+but also the people that open
+newsletters and the people that open
+Discord pings is there's probably a very
+small overlap so you're hitting two
+totally different demographics as well
+so I say it's the new newsletter it's
+like the newsletter is like how do you
+get a 13-year-old to read your
+newsletter and the answer is like
+Discord not a newsletter yeah yeah
+that's a really astute observation that
+uh this is this is why we're having
+intergenerational discussion Gen X are
+talking to the Zoomer
+Zoomer borderline Zoomer yeah so maybe
+we could talk
+about how you've used Discord and how
+you've leveraged that as a tool for
+keeping the community engaged because I
+want to learn like free COC camp we have
+a pretty active Discord as well we have
+na Naomi runs that Discord she's doing a
+great job of it but like any insights we
+can have from I mean thece I actually
+don't do any secret tips I do two things
+one I use it for announcement which is
+obviously cuz we just talked about how
+it's a newsletter uh I so I have a very
+different stance about Community than I
+think a lot of other people do and that
+um Community managers and people that
+really like Community probably think
+which is like my general stance is if
+you are doing something interesting or
+building something interesting people
+are naturally going to want to talk
+about it and so they going to form these
+communities and talk about this thing
+and then once that is happening you can
+choose to do two things one you can sit
+in the community and you can hang out
+with them set up events and try to
+Foster it within that I don't like that
+approach my Approach is if you just
+continue to build cool things people
+want to continue to talk about them and
+that's like the better way to like keep
+the community alive like I think the way
+you like keep a Vibrant Community is
+like the thing that they are bonding
+over is like still interesting and now I
+think there's also the like you know the
+the best answer which is you do both at
+the same time yeah both building
+something that's interesting and you're
+also like engaging with your community
+and making sure that there's fun things
+going on and that like something
+something something but and I think in
+like reality it's very hard to do both
+so I always focus on the like okay let's
+make sure that there's still something
+like interesting that people want to
+talk about um and I don't always do a
+good job with that but that is that's my
+goal and then my other tip for like
+people that are running discords is like
+hire a or find somebody the community
+that wants to be like the Discord
+president that handles like all the
+different
+Discord like things for you I think
+that's very important because it's very
+hard to manage a Discord um if you're
+also trying to keep the community live
+at the same time like all these things
+are like very hard to do at the same
+time um plus the person that's there's
+people that actively want to help and be
+the president and make sure the
+community is like you know enjoyable CU
+they enjoy being in it um so that's all
+my always tip if somebody's trying
+trying to do a Discord and they're like
+getting overwhelmed especially cuz like
+100k was the first time I was trying to
+like manage a very very big Discord but
+even for my personal Discord uh for my
+my YouTube channel of like 10,000 people
+I had a server president and that like
+helped a lot and like took a lot of the
+managing load off of me and they also I
+think they enjoyed it for a bit who
+knows maybe they did sorry Ian awesome
+so uh yeah shout out to Ian for taking
+one for the team and being the Discord
+president very very fancy like President
+Business like him
+so uh just to recap your advice if you
+keep doing the interesting thing then
+people will just naturally talk about it
+and yes you can do some baseline level
+of management of that Community to make
+sure it keeps stays active and doesn't
+become you know uh doesn't descend into
+a crazy you know Lord of the Flies type
+toxic environment which will often
+happen if you leave a Discord server on
+you know the Bots come in and people
+start complaining about the Bots and
+pretty much it becomes a complaint
+Discord where it's just I inventing you
+know all discords devolve that way it's
+unfortunate yeah but it's kind of like
+your your garden will just devolve into
+a tangle of weeds if you don't actively
+manage it right so Discord is not any
+different from managing a garden really
+um so maybe we could talk a little bit
+about the SEC so you said just to recap
+you said you use it for announcements
+and then you said you use it for two
+things what's the other thing oh I know
+my two tips was get a server president
+and I use announcements that was my two
+things I don't I don't really do
+anything else I mean I think I think a
+discord's also very useful in the same
+way that like a YouTube comment section
+is useful and that like I also like read
+a lot of people's messages in the
+Discord for like research so like I
+personally just like read a lot of what
+people say on my own Discord even though
+I'm not always interacting with them
+they might even think I'm ignoring them
+and I never interact with them the fact
+is I have like a a lot better idea of
+what they think than they think I
+probably think but you can't always
+immediately fix everything somebody
+wants fixed for them but I'm like
+usually aware usually sometimes I'm not
+but I think the the research one is very
+big of just like getting a pulse on what
+people think yeah of what you're
+building or what your content's about or
+whatnot yeah and and that's something
+like I do a lot as well just FYI if
+you're watching this on YouTube leave a
+comment guess the Baseline that I played
+at the beginning of the video you know
+uh talk about an interesting thing that
+Ben has said so far that is of interest
+to you I will read those I read all the
+comments that subscribe button oh yeah
+if you're not one of the 9 million
+subscribers Freo K you want to help us
+hit 10 million go for it uh but
+seriously like I love reading feedback
+uh I send that email one of the reasons
+my email cost $700 a week to send is
+because it's going to 7 million people
+uh and you know that Amazon sees is the
+cheapest place you can send bulk emails
+I was going to say 700's pretty good for
+for that too I was like man who are you
+using yeah yeah I mean we've optimized
+the heck out of that like it s it takes
+a lot of time to send 7 million emails
+and uh even at like the 10,000 emails
+the second like limit and stuff so we've
+got like all these IP addresses that are
+dedicated for good deliverability and
+all this stuff we warmed them up we did
+all these things and I'm like very
+careful about not including words that
+are spam words in my email like so you
+can't say promo or bonus or anything
+like uh like I only use the word free
+one time in the entire email even though
+everything in free C is free just
+because I don't want gmail which is like
+where 90% of our email recipients open
+the email it's kind of crazy the amount
+of concentration in the email client uh
+Market but Gmail user too yeah do me a
+favor if you're listening to this go to
+your inbox search Quincy Larson uh in
+the spam folder and if you see any
+emails from Quincy lson say mark not
+spam because that does help like teach
+Gmail that like hey Quincy lson is not
+sending trying to send people like
+Viagra prescriptions or something like
+that right like Quincy lson is actually
+sending free full length courses free
+books stuff like that because my
+goodness like so many people are like
+yeah it's so weird like I always get
+your email but then I checked and it's
+in spam and I'm like unfortunately
+that's just the Gmail algorithm like
+there's nothing we can really do about
+that yeah it it has a lot of false
+positives right um but but by marking
+not spam you will ensure that that like
+more you'll increase the likelihood that
+people will get it and you will probably
+not have it go to spam in the future so
+sorry for that little aside but but the
+thing is I love reading the replies
+yesterday we got a reply from somebody
+who is like hey I've been receiving your
+email since 2016 and I've kind of like
+aged out of it so to speak because I
+worked as a machine learning engineer at
+Google I work for the federal government
+uh doing data science and now I'm in a
+PhD program and I'm using coding to like
+solve physics problems and like I feel
+like I know about as much as like the
+upper bound of what you're teaching
+through free code Camp right so they
+probably phased out a free code Camp
+yeah yeah yeah and I'm like I'm like
+cool and I unsubscribed to him and I
+said thanks and I just asked him if he
+had any he or she is a he the name was a
+very male name uh but uh I asked him if
+uh he had any you know anything else he
+wanted to share about his coding Journey
+or whether he written about it somewhere
+hopefully I can share an update if he uh
+does uh but but I just thought that's so
+cool like we we've got like tens of
+thousands hundreds of thousands of
+alumni on LinkedIn Alumni network and
+many of them are working at like fan
+companies and stuff like that one of the
+questions I want to ask just to change
+gears a little bit we'll get back to
+void pet but I I have a bunch of Rapid
+Fire questions just to break things up
+so one of them you did not go get a job
+with your computer science degree you
+chose to kind of build a reputation for
+yourself through doing like 365 days of
+coding tutorials is that right you did
+like a solid year of coding tutorials
+yeah no I think I did it like a posting
+every day for a year talk
+about that's a crazy Endeavor if
+anybody's ever created the coding
+tutorial it's not just like oh I just
+sit down and bl it's not like let's chat
+on Twitch or you just talk about
+whatever like what we're doing right
+here you have to put a lot of thought in
+planning come up with a topic figure out
+how to like teach that optimally maybe
+you could talk about what that was like
+yeah so the reason why I even started
+doing that in the first place is because
+I felt like I was actually bad like I
+thought I was bad at making videos and I
+thought I was bad at coding tutorials
+and I also thought I was bad at coding
+so I was like the only way I know to get
+better at that is to practice it and I
+was like I'm just going to like start
+practicing this every day and there's
+something really freeing about just
+allowing yourself okay I don't really
+care about how this comes out all I care
+about is that I make a video every day
+um and I think at some point that does
+that doesn't work um but for the first
+year it works so like that it like that
+was like a huge growth period for me was
+to doing that um and I think one of the
+things I realized is people really enjoy
+that style of coding tutorial too
+because what that meant is it included
+all the errors so I would make lots of
+mistakes in the middle of my coding
+tutorials I would even rework large
+parts that I had told you like this is
+how it should work and then I realized
+you know what now that we have this in
+place that doesn't really work anymore
+but that is how I code when I'm not
+making coding tutorials and I think the
+fact that being able to show that
+experience and how I think through the
+problems I think a big thing that's
+missing from a lot of coding tutorials
+is like the thought process and like how
+how we got to that next step I
+understand that next we're doing this
+but like how did we how did the person
+even think that that was to be next and
+I think the the thing that I realized
+people actually enjoyed and also made
+easier on me CU it wasn't like I was
+like trying to make the perfect coding
+tutorial and I had to plan everything in
+advance I'm like when I start like for
+example and I was doing a slack clone or
+like trying to build this thing I had no
+idea how many videos that was going to
+be I had no idea all the things I was
+going to cover I was like we're just
+going to start and see where this takes
+us and see where we go with this and
+through that process I was like okay
+well I mean obviously what makes sense
+next is websockets because we want this
+chat to like show up right away so now
+that we're in websockets let's oh you
+know what we don't want anyone to be
+able to get our updates we need to kind
+of authenticate these websockets so
+let's like look dig into that and you
+know what now that we're doing
+websockets maybe it doesn't make sense
+to like send rest requests for all these
+other ones maybe we should do a couple
+more websocket messages here and let's
+rewrite these things and so like it just
+like would naturally progress and we
+would like add more and more that's a
+very different style than most kind of
+like a Bob Ross sell like Bob like I'm
+going to paint here's my blank canvas
+let's start with some mountains and like
+oh you know these mountains need some
+trees oh you know what like the sky it
+may not be a perfectly clear day like I
+haven't watched Bob rosson since I was a
+little kid but like I love just kind of
+the additive nature of his teaching
+style and I've always thought like you
+could probably teach a lot of things in
+a very engaging way if you use like that
+Bob Ross approach obviously painting is
+very Visual and so people can very
+clearly see the dramatic progress from a
+blank canvas to like I finish painting
+and everything but uh probably similarly
+with coding would you consider yourself
+like uh somebody like who just kind of
+Manders through a tutorial or do you
+have like a like an outline when you
+start a tutorial so I would say it's
+like a mix of both like I don't create
+an actual outline I don't write anything
+down but I do have like a rough
+structure of what I think I want to get
+to at some point uh it's very vague very
+rough but I would say I'm probably
+closer to the Meandering type but also
+I'd say I'm a pretty concise person so
+at the same time I'm not trying to
+meander but maybe it's like REM
+mandering a little bit um and also it's
+not always all good for example probably
+my longest course I think was like a
+14-h hour one um and maybe 4 hours in 6
+hours in I actually just got really fed
+up with the package that I installed for
+doing database calls and it was just
+really annoying me and I was like I
+actually can't do more coding with this
+anymore and I just like ripped it out
+and we refactored all our like database
+calls because I was just like I
+literally could not could not take it
+anymore and I like I can't recommend
+this package like I'm just like not
+enjoying it like we're not going to like
+continue doing it and like some people
+might have been like okay we're going to
+now throw away those six hours that we
+were using it and like start here and
+like start over and be like start from
+scratch and like I just like I just I
+just the thought of starting over like
+that just like so gross to me um and so
+like there's there's pros and cons cuz I
+know some people you know they might be
+put off of that like I just feel like I
+just learned six hours of this package
+that you then are just like is bad and
+you're not going to use but I think like
+that's just like how programmers work on
+an everyday basis and like you're going
+to have that same experience in your day
+job or when you're coding a project on
+your own and you're like wow this is not
+cutting it anymore like this we we can
+kind of rip out this dependency like
+that is such a standard thing to do but
+like if you watch tutorials no one ever
+rips out of yeah yeah I can't imagine
+being six hours into his tutorial and
+just say you know what hey also is this
+a marathon recording are you recording
+for 14 hours straight no no I broke I
+broke it up I just compiled it all into
+one video um as as you know like the
+YouTube Gods love watch time so if you
+have like long videos I was like okay I
+always split up my videos in the
+playlist but I was like you know this
+time let's mash it all into one let's
+see what that that does turns out wow it
+did a lot better um so like mashing it
+all into one is actually a pro tip for
+YouTube tutorials yeah yeah if you're
+creating like a YouTube course doing the
+full length course Works obviously Freo
+Camp is built on that notion of just
+delivering a single video that has like
+Soup To Nuts people really like table of
+contents though so make sure you put
+that in the description still like that
+is necessary yeah uh so uh you would
+record this over a long period of time
+like like maybe you could talk about the
+recording of that 14-hour like how do
+you get ready to record like do you have
+like a kind of 8 Mile bathroom easier
+it's e even easier than you think
+because because I'm not planning out the
+entire course beforehand I'm just like
+okay we are going to start coding I
+think that one I did like a Reddit clone
+all right we're going to start coding a
+Reddit cone the very first video we're
+going to spend 10 minutes recording and
+we're just going to set up our you know
+workspace we're going to get vs code set
+up we might even install some extensions
+I'm going to use in that video that way
+you don't feel like I'm doing like magic
+in the middle and so I just like tell
+you like that's what I'm I'm using and
+like hey let's just do mpm and net to
+start our project and like this is it
+and we're going to install this package
+and so I like yeah I I start a a Tut how
+I would start a regular project if I was
+coding this like for a private thing
+that I wasn't even planning on to share
+with anyone I kind of do the same
+process for both and for that some
+people do do a lot of outlining of like
+how am I do all this thing for me it's
+literally pacing in a circle and then
+I'm like you know I feel feel pretty
+good about this let's let's like jam
+some stuff out and see how it feels like
+for me coding is like the outline and
+there's like some cons of that like
+obviously you can write some bad
+outlines and you have to redo it um and
+also I mean I still like all right you
+know I think I'm probably going to use
+redus for this I'm going use postgis for
+that like there's there's some rough
+already have some like rough decision
+making in the background exactly kind of
+like when Bob Ross sits down to like
+probably mix his paint on his palette
+for the day he's like I'm thinking I'm
+going to do like more saturated Hues
+today or something like ex you probably
+had some no of like how he's going to
+approach it right and like here's the
+thing too because I've done so many like
+SAS projects and like so many like I
+built read it and slack and like these
+things it's like I'm not rethinking
+entirely from scratch how I'm going do
+authentication for example first time I
+was thinking about authentication I
+would just like I just thought about it
+for hours off camera and like did lots
+of research and got it wrong like
+hundreds of times um and so it also was
+like obviously the parts I don't know
+what I'm doing I'll like I need to like
+research and think about those a lot
+until I like have until I feel like I
+have a good grasp on how I might do it
+and then I get do a video and test it
+out and like so you're not going to
+detch totally cold usually you've I'm
+not at least one totally cold it's like
+all right I have to at least read the
+docks of like how I'm going to like
+build this thing out that I have a guess
+and then now I have a guess let's try
+out my guess and the Try It Out Try my
+guess out is usually happening on camera
+um and so that that part can go wrong
+but um and and like there's actually
+some parts in my ts will all just like
+pull up the docks cuz it's like you know
+what this is like a small thing let's
+see that's what developers really do in
+real life right they don't have this
+encyclopedic tic memory uh now I would
+just pull up chat EBT in the middle of
+my uh TS probably is what would happen
+now half the time yeah yeah I had to
+like you know change something with FFM
+Peg the other day and uh I just like I
+could go read the FFM P docs or I could
+just ask GP G me get it done the perfect
+use case honestly yeah so uh all the
+parameters I even like it made a mistake
+and it gave me like the wrong parameter
+and I was like wait it's giving me this
+output and you said to use this and it's
+like oh yeah here let me just correct
+the entire here's the entire line of
+code that you need to inut in your
+terminal based on the output of this
+previous step and I'm like cool you know
+is it's so useful um let's talk very
+briefly about AI cuz AI is the thing
+that everybody talks about and we'll get
+back to uh creating but uh how do you
+use developer tools like that are AI
+power do you use uh GitHub co-pilot do
+you use uh any of these other tools uh
+in it I use Co pilot now I actually I
+think I didn't use it for like maybe the
+first six months because I thought I
+wasn't going to like it and I was like
+kind of anti I don't like the idea of
+having to upload my entire codebase to
+to get Hub to be able to like synthesize
+things for me I don't like that part so
+I was resistant for a while but once I
+started using it it is just like
+autocomplete on crack and I really like
+it like it's basically just like I type
+less and so if I can type less that's
+something I really enjoy not having to
+type it all out I don't use the function
+as much where I like am asking it to
+give me code Snippets once in a while
+I'll do that but I find like that tends
+to be a little bit more arrone I like
+the things where just like it happens to
+know what variable that I'm about to
+reference and clo and like the thing
+that's awful doesn't close the curly
+brace like it's still a little scuffed
+with curly braces right now so that's
+like the worst part um and so you you
+kind of have to away well I'm going to
+autocomplete this but then I have to
+backspace back space to fix the curly
+brace and sometimes fixing the curly
+braces is worse than the actual auto
+complete that you know there is there is
+a little bit of friction but overall I
+I'm a fan I just think it like I type
+less with it and that's a plus for me so
+like with GPT you're figuring out like
+specific instances where it's worth the
+trouble of you
+whereas like like when I'm trying to get
+an FFM command and I 10 minutes try to
+look up the syntax and all the flags and
+everything uh but uh in a lot of cases
+it's simply not worth the time to
+correct the output and you kind of Le
+actually the other time I use it now
+that I think about is like it's pretty
+good at giving me ballpark um squel uh
+statements too like if I have some like
+crazy data that I want to grab um I will
+I will will ask chat gbt and it will
+like Ball P Park me like kind of the
+right place and then I can tweak it from
+there to get
+there yeah awesome uh a lot of people
+who are learning to code like I have
+people ask me all this time like is it
+academic dishonesty if I'm using uh you
+know because like so academic honestly
+we take that very seriously at Freo camp
+we are you know no pleasure like I'm
+very proud to say that I've never
+cheated on a test in my entire life uh I
+I'm like a like a hardliner and I don't
+expect everybody to rise with this you
+know thing but but uh for me like it's
+just like one of those things like I
+can't live with myself if I cut a corner
+like that uh and a lot of people in the
+free cocan community feel the same way
+like people that are learning on free C
+Camp and they're like I don't want to do
+anything that violates the Norms of
+freeo Camp they they ask me all the time
+whether this constitutes plagiarism or
+that constitutes outside help or
+something like that right so um a lot of
+people write and the ask like hey
+co-pilots you know adding this code to
+my project is that okay for me to submit
+it and what I tell them is like
+technically that's not academic
+dishonesty in my humble opinion you're
+just using tools but you know maybe
+you're limiting yourself by using that
+tool and maybe you're not ready to use
+that Tool uh how do you feel about like
+people that are learning to code and do
+you think that these are going to become
+like a handicap like somebody who's
+doing weight training and then they're
+shooting steroids in their arms to try
+to get faster results as opposed to just
+working harder and you know dieting
+better or something I think probably
+like at the very very very beginning
+like when I'm learning what like an INT
+in a Bo is it probably is worthwhile to
+like have a dud editor because even when
+I was first learning they didn't start
+me in like a good Java editor they gave
+me like Dr Java or something like I'm
+not I'm not learning in like Eclipse
+where all like there's autoc completion
+all these things so I think at the very
+very beginning like I think yeah
+probably like you kind of need to learn
+some things before you get too much like
+autoc completion yeah and like telling
+you what to do but I think after that
+once you have like kind of like got some
+general programming knowledge I would
+happily give a junior Dev like co-pilot
+and like run with it cuz like it's just
+going to be helping you co-pilot's just
+going to get be getting better you're
+going to be using the JW like using that
+for future things like you should be
+learning it like how it even functions
+and how to utilize it well and I also
+think it's like co-pilots like a
+different form of like copy and pasting
+from stack Overflow and like yes
+co-pilot like might be a little bit
+smarter but also a little bit Dumber
+sometimes and it kind of like evens out
+I guess but it's like when I did coding
+projects in college like I look up stack
+Overflow of like how i' do this snippet
+in C++ and then nobody felt weird about
+putting that in their you know project
+and I think this one's like a little bit
+more gray area but overall I'm like yeah
+use the tool it's basically you know
+similar yeah premise use the tool use
+the tool the tool that you can use use
+it um like it don't use it yeah yeah and
+a lot of people don't like co-pilot like
+there are some very vocal uh critics of
+co-pilot some of whom I will be
+interviewing in the near future uh I
+think
+also some different uh programming
+language apparently like it's just like
+a lot worse type script I find is
+fantastic which so a lot of it probably
+has to do with like the Corpus of code
+on GitHub as far as like whether it has
+sufficient training data if you try to
+get if you try to use co-pilot for like
+cobal or something like that you might
+have I've heard even like C for example
+it's just like not as good compared to
+typescript yeah that's good to know uh
+for all the C devs out there uh we got
+some C courses coming we're working with
+Microsoft on potentially uh publishing
+some additional C certifications if you
+haven't heard you can get a free C
+certification joint certification from
+free COC Microsoft uh on freeco camp.org
+freec camp.org learn anyway sorry little
+plug for C good yeah um so one of the
+things you mentioned earlier was Eclipse
+very popular open source IDE for
+primarily I think Java development yep
+yeah uh and you didn't like or you you
+you felt that it was too powerful for a
+beginner where would you strike a
+balance like for the people out there
+who are relatively new to learning the
+code like dropping somebody into Eclipse
+versus dropping somebody into another
+tool that I know you love
+them that's a good that's a good one I
+actually don't even think it's the end
+of the world if you're like very first
+editor is eclipse and I don't even think
+it's the worst if you like literally
+start with co-pilot but I think if I was
+like trying to craft the ideal learning
+experience for somebody I would not put
+them in that and I would put them in
+something like a little bit simpler just
+so like they're they're not trying to
+like what the heck why is there this
+gray like text popping out at the very
+beginning when they're first just even
+trying to like mouth feel the word Bull
+and and for the first time like that's
+not even a words you say um and so I
+that's that's one thing I feel like um
+and like and here's the thing if your
+beginner class starts in Eclipse I think
+a lot of them probably do it's like not
+a big deal like you're going to be fine
+your eclipses you're eventually going to
+learn anyway um I really think them you
+shouldn't learn until like you're like
+I'm a programmer like I want to be a
+programmer like I think a real
+programmer EXA like I use butterflies
+exactly yeah I'm going to L to this
+excellent uh G uh XKCD comic about real
+programmers exactly like I love
+programming and I love them um but if
+you're in the if you haven't finished if
+you don't feel like you're like mildly
+like proficient at even like one
+language like python Java C++ and you
+don't know whether you're going to be
+programming for the next 10 years don't
+learn Vim Vim is an investment Vim is a
+bunch of key binds to make you code
+faster and if you don't think you're
+going to be coding for the next 5 years
+or you don't know whether you're going
+to be coding for the next 5 years you
+should not learn F but if you're at the
+place where like I was like man I'm
+going to be coding for the next 5 10
+years and so as soon as that that I know
+that that's a thing for me I'm going to
+be investing in like setups that like
+help me over the long term and one of
+those things is f and so I'm I'm a fan
+of that as soon as you know that for
+yourself and maybe that's after your
+third language you learned maybe that's
+after it's going to be a different break
+point for different people but until
+you're there I would say not worth
+earning and also I'd say it's even less
+necessary necessary now that like
+co-pilot is like kind of doing half the
+work too and like vs code is getting
+better so I would also only really learn
+Vim if you feel like you feel like you
+use your fingers a lot like I also just
+like would do a lot of coding on a daily
+basis if you feel like you know you're a
+more like chill programmer like you're
+coding like two hours a day maybe then
+like you know like Vim still like nice
+to know but like I'd be sitting there
+like making these TTS and like doing
+these things and I'm just like coding a
+lot during the day and like I can't be
+bothered to like move my mouse for like
+the hundredth time like I just need like
+w pow W pow pow um so it also is like
+how drained are you from the like
+average use case of not using them too
+yeah and I'll just quickly plug on like
+not liking to use a mouse I don't like
+using my mouse either I like doing
+everything with keyboard I created this
+video that I'll link to about if you're
+on Mac OS you can do almost everything
+without ever you know touching your
+mouse uh like these command hot keys for
+jumping around and text and stuff they
+work in EM I learned them for emac
+actually because my friend is like emac
+and then it turns out they work all
+across uh terminal on Mac like in the
+actual OS any text you're editing so I
+just call them the controls hot keys but
+uh I'll I'll find a link to that and add
+that too yeah I have keyboard for my for
+my browser and for my terminal that I
+have them key bindings on but I don't
+have it at the OS setting that's kind of
+cool yeah it's just built into Mac uh
+which is kind of cool speaking of
+machines uh you're a Linux
+fan uh I mean I am a Linux fan but I'm a
+Mac User so that's where I S Spectrum
+yeah have you like maintain like Linux
+machines that you worked on in the past
+so I uh I was on Windows like the first
+like chunk of my life because I was a
+gamer and then I like when I was like
+man Windows is I learned pretty quickly
+like Windows is like absolutely awful
+for web development and like it's Gott
+like a little bit better with like the
+Linux subsystem and there's some things
+that are helping but like before all
+those things it was like even worse than
+it is now and so I was like I very quick
+like this is not it and so I tried
+setting up my own Linux um setup when I
+was doing that the main thing I realized
+pretty early on for myself is I hate
+configuring things I like got so sad
+sitting there like whenever anything
+would break this is part of the reason
+why I stopped using Vim in terminal and
+I started using vs code with Vim key
+bindings is cuz like I reached this
+point where like my favorite part of
+programming is like building things not
+configuring things as soon as I'm like
+trying to set things up or things are
+constantly breaking I like don't like
+that not a fan whatsoever um and so the
+fact that things just work in Mac a lot
+more often than in Linux is the reason
+why I am now on Mac like it is just like
+things are easier to set up they happen
+to just be working more I don't have to
+tweak things and I totally understand
+that you can like set up your arch box
+or your buntu box to be like very close
+and like get it there but then like
+something breaks at some point whenever
+I did it and then like I'd be like I
+just don't want to deal with this and so
+I eventually switched to Mac and now
+that's where I live and that's where I
+program and that's where I I am in it
+now of like that is the part I I care
+about let's talk a little bit more about
+your day-to-day kind of workflows and
+like how you approach the day you're
+you're a prolific person who seems to
+have a high degree of like self
+motivation uh and you get things done
+and like I would say of all the things I
+respect people for I respect them for H
+you know being thinking people who who
+have ethics that they adhere to I think
+it's the highest virtue one can aspire
+to is is being you know the uh what is
+it the
+uh gosh we're recording this live and I
+don't do any editing so uh
+living the examined life right uh that's
+probably the highest thing but the
+second thing I respect people for is not
+just talking a big game but playing a
+big game like getting things done and
+you get so much done I want to squeeze
+ring some of those productivity tips
+from venad while I have him on the call
+maybe you could talk about like what
+your day-to-day flow is like when you're
+in work
+mode I'd say I have one big productivity
+tip that I think is the ultimate one
+which that I do which is just sleeping 9
+hours I just think that like for
+programming and anything that is like
+you do have to do like a lot of thinking
+because I think there's a lot of jobs
+out there that are you could kind of
+autopilot but it's really really hard to
+autopilot coding um you need to sleep a
+lot like and I think I have a lot of
+friends that sleep six or seven hours
+and like can get get get or like do
+totally fine with that I try to do that
+and call and I've tried to do it in the
+past cuz I wanted to like save two hours
+of my life not Durling in bed and I
+couldn't do it I just like everything
+got worse but I I was sadder and like I
+couldn't get as much done and for
+whatever reason I just feel so much
+better if I sleep 9 to 10 hours um and I
+can think way better I can code so much
+better so like that is my tip to anyone
+out there is like that's my biggest one
+if you're trying to be like improve your
+productivity as a programmer that's
+that's a big one um is that I think the
+other thing is just like it's like the
+boring basic it's like work out eat
+healthy food like you know those things
+I think all like really matter I notice
+for like myself particularly and I don't
+think I'm any that much different than
+anyone else it's just like when I
+physically don't feel comfortable at my
+like desk coding then I will perform
+worse big surprise so that means like I
+care a lot about like ergonomic chairs
+and like a comfy keyboard and I really
+like my mouse and like I want to make
+sure I don't like have a stomach ache
+cuz I ate too much spicy food at lunch
+and I just like oh wow so you you really
+like it goes down to your diet like
+dietary considerations like that you
+avoid spicy food not because you don't
+like spicy food but because of the
+potential consequences lat on day if I'm
+like I'm trying to be a productive God
+then I'm not eating spicy food I also
+really like spicy food so I mean it
+still happens sometimes um
+but I I if I'm trying to like hone in on
+my productivity like those are the
+things that I think about um and like
+the more I feel good sitting at my desk
+the more good work gets done and so
+optimizing like a really good desk setup
+and a really good um like environment
+for that I think is like very important
+and so that's that's how I think about
+it yeah yeah I what sleep tips do you
+have okay like there's probably like
+entire blogs dedicated to good sleep and
+there's like entire companies that built
+products around this but like what is
+your sleep setup I mean I think it's
+really hard but I think the best one is
+to have like the same bedtime every
+night CU then you like I think I go to
+bed at like maybe 10: p.m. and you know
+when you hear somebody has a a bed time
+at 10 p.m. you're just like loser alert
+like they're uncool it's so like it's a
+tough thing it's like you know
+especially if you're in college like you
+know Friday night like things happen and
+I don't always go to bed at 10: p.m. but
+the and like some people you know 10
+p.m. just happens to work for me like
+maybe 11 it's it's 11: p.m. for you or
+it's 12:00 p.m. for some people or you
+know midnight um it's different for
+different people but I think that's the
+biggest one is like you just get into a
+rhythm and then once you're in a rhythm
+it's like so easy to go to bed at that
+time I the tough part is actually the
+tough part is not actually the Sleep
+part it's like like juggling the social
+obligations around that um and so that's
+something you kind of have to figure out
+with your own life and what you're doing
+and like um yeah sometimes you just you
+know it's it's tough like you know it's
+it's it's a balance you got you got to
+choose where you want to be in the
+Spectrum um and so like that's the
+biggest one for me I think you know
+there's the obvious ones don't like use
+your phone play video games for bed like
+I'll like read like fiction sometimes if
+I have like if I'm having a rut of not
+being able to sleep like the biggest one
+is cuz of my brain's like thinking too
+much before bed I'll like read a like
+fiction book to like calm down like
+think about something totally different
+um but I think the biggest one and the
+hardest one and that's why if if it was
+easy everyone would be doing it and
+everyone would just be waking up feeling
+energetic and fantastic um is yeah
+having a regular fed time yeah yeah
+that's so cool that's a that's a you're
+getting the legit Straight Dope Pro tips
+here from Ben y uh so let's talk about
+um just developer careers and and then
+we'll we'll end on void pet because I
+want to talk more about that but like
+let's talk about you not going the Fang
+route and you've said before in the many
+many interviews I've listened to of you
+over the years just to prepare for the
+day that I would eventually interview
+Ben aad himself so you you've said I
+think in the past that like the best
+thing you can do for your developer
+career is like get a job at Google
+because then from the rest of your life
+you are a exg googler right like and
+that's a way to build credibility but
+let's say hypothetically that people are
+like 90 plus% of people are not like
+college only 1%
+who
+are talk to some Google rep like a
+career fa and be able to get an
+interview right everybody else is like
+applying through the front door um yeah
+what are some alternatives to getting a
+job at like a Fang company that can
+also permanently kind of like set you up
+for success and what have you pursued I
+mean I think I mean obviously I took
+like a very very different route which
+was like not even like getting a job
+whatsoever but I think I think the most
+important thing is like to set yourself
+up if uh for like getting good so like
+if you're a good developer and what I
+mean by that is I think some people
+think about like oh machine learning or
+AI pays the most so then I'm going to
+learn Ai and I'm going to do that thing
+I think that's a fine way to think about
+it too if that works for you and if it's
+working for you fantastic but I think
+like the more interesting way to think
+about it is to like set yourself up to
+be like very good at the type of
+developer um that you want to be and
+like fronted developers can make make
+more money than backend developers but
+backend developers can also make more
+money than AI developers if they're very
+good like the caveats always if you're
+very good and so I think like what you
+should focus on is figuring out and
+finding the programming Niche that you
+want to really spend the next 10 years
+on and that's hard to do like but that's
+something I thought about when like I
+was in college and I was trying lots of
+different subjects and I just found like
+I really enjoyed full stack development
+and I enjoyed building like this these
+applications and being like a product
+appli a developer was my favorite part
+but for other people it might be I love
+making like really cool like animations
+on the front end that like many
+interactions that are like really
+beautiful and I think if you can hone in
+the faster you can hone in and figure
+out what that is for you um and then
+focus on that I think that's just like
+how you can have like a really
+successful career is being like very
+strong at like one of those things and I
+think you can also be strong at multiple
+things because obviously like to be a
+strong full stack developer you also
+kind of have to to be able to like kind
+of do front end and kind of do back end
+so I think you can also um you don't
+have to literally be stuck for 10 years
+but at the beginning I think you should
+choose one and like build a pillar up
+and then build another pillar up and
+then build another pillar up um if you
+want to be a broader person anyway um
+but I think that's my biggest tip is
+yeah not everyone needs to go to Google
+and to to like have a fantastic career
+and I think most people honestly end up
+going to Google after they've gotten
+their first job I think like the the
+past forward to like having a strong
+career is like getting any job like the
+hardest part is like breaking in I feel
+like so getting any software engineering
+job even if it's at a small startup XYZ
+to like prove yourself and build up some
+of these skills and like figure out what
+you even like um and like what are the
+like professional environment feels like
+uh then I feel like you can work your
+way to Google or work your way to and I
+I don't even think Google's like the I
+like Google was way more prestigious
+like four years ago I feel like like
+that I feel like that they're kind of
+also losing some of their Prestige um
+where's the most prestigious place to
+work right now in 2024 dude I don't even
+know I feel like right now the hot thing
+AI I don't know if people really want to
+work at open AI it's like kind of like
+crazy with uh what's happened with uh
+Sam and getting kicked off and like
+coming back so maybe open AI is like a
+little bit more turmoil right now I feel
+like before that happened open I was
+like the hot company to be because
+they're like on the frontier of AI and
+that could be take over the world um um
+I mean I mean Google and Facebook are
+working really hard on uh yeah as well
+they're trying like I think the I mean
+here's the thing you can't go wrong with
+Fang either like I don't think you're G
+to be like darn I'm not like the most
+prestigious ever I'm working at Google
+Now Google's good Google's good like you
+should be happy if you work at Google I
+think Google's a good job like if you're
+happy at Google you should work at
+Google and I think there's there's like
+plenty of other places to be happy that
+you might even like better cuz like a
+lot of people really enjoy small teams
+I'm somebody who really likes small
+teams and like Google is going to be a
+very big machine with a big Cog and like
+there's some great things like free
+lunch but like sometimes free lunch is
+worth giving up for like having more
+flexibility and like being able to like
+I mean Google's pretty flexible so
+that's a bad example but like having
+more like um flexibility maybe within
+your role um and doing touching
+different parts of the the thing so I I
+think to recap I'd say one I think
+figuring out what you really want to be
+and specializing is very helpful in your
+career and to like getting that first
+job proving yourself and working up the
+ladder is like you can that that's very
+much like a great way to do it I don't
+think if you didn't start at Google
+you're doomed I think that's like the
+wrong way I and has your thinking on
+that evolved because like my
+understanding is you did go through like
+several Google interviews and they kind
+of like bandied you about and
+like at some point you just like lost
+interest in working for Google right
+yeah so I I orig so this was my original
+thought process in college I was like
+okay I know eventually I want to like
+start a startup or do a business of some
+sort like that's my interest like I even
+knew that in like end of high school I
+was like I don't want to work as a
+regular software engineer like working
+at a desk for whatever reason I just
+like had that feeling in me um um and so
+when when I got to college I was like
+okay but my plan's going to be I work at
+Google for a little bit and then I'm
+going to like you know pick up some
+skills and then do this um but honestly
+I just like couldn't be bothered to like
+like even the the starting to like do
+the interview process and like start to
+do the things I just got like the ick so
+hard I was just like I cannot do this
+like even though like I thought this
+might be the path forward I was just
+like I like leak code to some extent
+like it's kind of fun doing algorithms
+but at the same time it's like kind of
+not and it's like kind of useless and
+it's like kind of not useless it's just
+like I just couldn't be bothered with
+that whole system I just really disliked
+it and it just like you're talking about
+like the The Gauntlet the Whiteboard
+coding interviews
+and you went through some of those with
+your Google application so for me I did
+a okay there's this thing if you search
+it on Google uh there's a chance like a
+little popup comes up that's like would
+you like to do a coding challenge
+there's a name for it I forget what it's
+called my friend got that and then they
+were like man it lets me invite another
+person to this so I they invited me I
+did a little like coding Challenge and
+basically you're just solving algorithm
+problems and if you solve enough
+algorithm problems they then invite you
+to do a second like just like a coding
+project thing in like a browser and I
+think I solve some algorithm thing I
+made it to the next like thing in the
+process um and then I did a like Google
+doc thing that's like the standard
+Google interview you're you're kind of
+pair programming or you're like live
+coding in a Google doc I did something
+um and then I can't remember if I didn't
+do it good enough or like what happened
+but I did a second um coding doc
+interview and then I either was not good
+enough or something happened tldr like
+they were like um the the window has
+closed for this um you know part of when
+Google hires for like the new grad
+positions and you'd have to wait and
+reapply at the fall and I and I was like
+I just don't want to wait 3 months and
+it wasn't that long it was like two or
+three months before it was going to be
+fall um and do it but I was like I can't
+even I can't be bothered I like if I
+wasn't good enough now like I'm not
+going to wait and reapply and do it then
+and then I I was just like I've lost my
+interest like I was already I was
+already borderline and then the fact
+that I just like I was I could just tell
+I was just like going through the
+motions and like not having a good time
+even at the beginning and it wasn't like
+I was like excitedly like yes I just
+can't wait until I work at Google as
+soon as I was doing my my things I was
+just like uh to some extent the
+interview process kind of like killed
+the romance for you yeah yeah yeah um
+well you've also applied to uh you know
+another prestigious institution out
+there in Silicon Valley uh the Bay Area
+um and that is why combinator true uh
+maybe you could talk a little bit about
+y commentator the accelerator like what
+inspired you to apply there that one was
+simple because basically I don't think
+that one's like at the time I think this
+institution some people would argue has
+been watered down a little bit um I mean
+even back then it was you could say that
+was the case but I think if you're
+starting a startup one of the best
+places that like like as as excited as
+people were for Google for software
+engineering the equivalent for startups
+was YC everyone wants to get into y why
+combinator short for YC everyone wants
+to get into that that was like the path
+that was like what everyone's excited
+for so like I actually didn't know too
+much about it but when I was making Doge
+house I applied to YC cuz I was like
+maybe this startup has a
+potential and like obviously like
+there's there's I was I applied with a
+doge themed like you know Clubhouse so
+like there there was some problems there
+but obviously like the point of YC and
+stup incubators in general is the first
+idea you land on or you apply with you
+may not necessarily stay with and you
+kind of figure out what it's going to be
+and it might look totally different when
+you ENT in the program I ended up
+applying late because it was like
+already past the deadline of when you
+could apply so either one my application
+wasn't good enough to get past the apply
+while I also late because the project
+there could have been like many of
+things going on there but tldr I got
+rejected from that but also basically
+most people have been rejected by YC and
+unlike uh a lot of other things YC
+there's almost like this stigma around
+it of like you just apply this YC like
+lots of times like if you if you're
+somebody who's dedicated and like trying
+to do startups and build
+businesses like all right you might not
+have your stuff together on the first
+round but apply the second round and
+apply the third round I think they have
+some stat like most people that get into
+YC have applied like two or three times
+to it or something so like there's some
+they I I didn't take it as a like Crest
+fall and like I'm never going to make it
+and I was just like this is part of the
+process like this is like like um and
+obviously I also I and here's the other
+thing I didn't go in thinking like I
+there's no way I'm not getting accepted
+like this is like the project they're
+going to take me on like I knew I could
+I understood from their point of view
+why they might not have accepted me and
+so there wasn't any kind of like
+dissidence between where I was like oh
+my gosh I can't believe they didn't take
+me but yeah I I applied got rejected
+from Doge house and that did not happen
+either so like I've been rejected from a
+lot of Institutions and places before um
+and I just like try to keep going and I
+like I also ask myself like do I even
+care about working through the
+rejections and getting to the place um
+or not because like sometimes you don't
+and so you shouldn't try to pursue it
+and sometimes you should because it's
+worthwhile and yeah so so just like with
+Google you you did the math and you're
+like nah I don't want to bother with
+this anymore and YY you similarly you're
+like cuz I mean you probably could have
+applied with void did you apply with
+void pet so we we applied with we
+applied uh with void
+pet the like a later year um but I can't
+remember if if this is it happened at
+the same time we basically got to a
+different accelerator so we ended up
+going to a different accelerator than YC
+when we applied with void pet so I don't
+know if we got formally rejected or not
+I cannot I can't remember we might have
+been rejected one time and then the
+second time we were planning on applying
+but the thing is we were making a game
+and YC you don't really you don't really
+apply to YC making a game I think
+there's some people that are are in
+gaming and they do YC and they like
+maybe do something but also YC is kind
+of like not for that for the most part
+so also we kind of knew it wasn't the
+perfect fit and there was another like
+accelerator for gaming that just started
+um and so it was called speedrun and so
+that was the one we like well this is
+like a much better fit for us so we
+ended up doing that one cuz it's like
+actually meant four games so we ended up
+doing doing that one got into that that
+worked out great um and so we did that
+what was that experience like just for
+people who are interested in doing like
+an accelerator a lot of game devs
+probably listening to this uh what I
+actually think speedrun 3 might be
+taking applications right now so like if
+you're a Game Dev watching this like you
+can go apply Google speedrun a16z is the
+firm that runs it um you can can apply
+Andre and Horwitz yeah yes yep you can
+apply to it now and uh I think it was
+fantastic I I think for me the uh
+biggest thing that I got out of it was
+being in like a cohort of other people
+building things similar to me because
+before that I hadn't done anything in
+gaming I didn't really know too many
+people in gaming I didn't know other
+people making games that like were also
+trying to make a business out it and
+like had the intensity that I had so it
+was also very nice to just like talk
+with other people that were doing what I
+was doing it's like why is School useful
+why is college good it's because you
+have all these people at a similar stage
+of life that like you can like talk
+through what you're going through and
+like doing that so I'd say like I would
+definitely recommend it and it was very
+helpful from like that point of view
+also obviously they give you money so
+like you you get money to like start
+your business and that's like very
+crucial when you're at the very
+beginning so the combination but like
+basically every accelerator is going to
+give you that it's like yeah it's one of
+those things that's like combination of
+money and also the cohort and like what
+you learn from doing that it's very
+powerful and like I definitely recommend
+it to people and like once you're kind
+of done an accelerator you're kind of in
+with um with that like you just have
+like access exactly exactly that's cool
+so uh you went was it an in-person was
+there an inperson component there was an
+inperson component to this one this one
+was optional but I actually just like
+lived in SF for a month to do it cuz I
+had never really like lived in SF or San
+Francisco um and so I was like I wanted
+to like see if I would like maybe want
+to move there or not um and so I was
+there for the month for that um and so
+it was great like doing stuff in person
+and like actually hanging around SF for
+the first time because before that I
+hadn't spent like that much time there
+um and so that was last May that I did
+that um so that was cool and I
+definitely enjoyed the iners part of it
+and just on a personal like living in SF
+like being a Southwestern I guess you
+grew up in Texas I I partially grew up
+in Texas I'm from Oklahoma City really
+um but
+uh being out there in California this is
+your second big jump out to California
+because my understanding is you lived in
+La for a while in like Creator eom the
+Creator mea right yeah well can you talk
+about like just very briefly like your
+experience in LA versus San Francisco
+versus Austin because they're really all
+three of them are kind of like big Tech
+you know cities if you will um a lot of
+companies based in all of them that are
+doing exciting stuff and maybe maybe
+what the like local Vibe of the
+communities are the developer
+communities are in those three cities
+and how you compare contrast yeah
+definitely say the stereotypes are true
+like when I went to LA it's very like
+entertainment focused it's very very
+Creator focused obviously I was a
+Creator so I was also going to those
+things um and I think here here's like
+the other thing too is like if you're it
+it really depends the bubble that you're
+in like for example I I feel like La is
+really tough to be in if you not wanting
+to do and be around creators
+entertainment people and if you're not
+doing that it's very hard to like meld
+with that culture or you might look like
+an outsider like and so I think if
+you're just like a tech person and you
+show up in La people might just be like
+what are you doing here why are you here
+like what is this um and like but if
+you're creating content all of a sudden
+like you're a Creator like me like
+there's Creator parties all the time and
+like there's all these things you can do
+to like do that and I think that's very
+cool and I think the inperson element of
+that's like really great I think SF like
+the stereotypes are true it is a bunch
+of nerds building things in SF lots of
+big money there software things are
+happening there's lots of people that
+care about building startups and like I
+I really liked the like culture of SF
+from that point of view CU like I'm a
+builder like nerd type as well and like
+I really enjoyed that and I really like
+people are a lot more humble in SF like
+I honestly I just feel like the
+stereotypes are kind of like
+like true um and I think it really
+depends on like what what you're trying
+to do with like your life and like what
+your goals are like if I was trying to
+be like the biggest Creator then I would
+probably like do more things in La if I
+felt like I was also trying to do like
+in-person things in La um and get the
+value out of it and I think if I was
+starting to make a startup that was like
+selling to businesses I would live in SF
+because that is where the like Hub of
+all these things are happening to and
+all my friends have businesses that I
+might sell my product to and then like
+that like network is like very
+invaluable and you like do that sort of
+thing I'm in Austin now for like a very
+simple reason which is like Austin's
+really cheap and I really like the like
+option of like having like infinite
+Runway and not feeling like there's a
+lot of pressure to like you know bust my
+I like work really well if I don't have
+like a glooming pressure on me that I
+have to do something um and so like I
+know that for myself and the fact that I
+can just like kind of like live like a
+king in Austin and like the cost of
+living is just like a lot more in like
+LA and SF that like I have to either be
+like the trade-offs have to be worth it
+and like for us we kind of know for for
+void pet if we move to LA or SF at the
+moment it's not going to make void pet
+two times better but like other
+businesses that might be the case like
+your business might get two times better
+if you move to SF or LA and like we've
+tried that's why we we like stayed in LA
+or not La SF for the month in like last
+May CU I kind of wanted to see like
+would void pet be like 2x better if I
+was an SF for a month even um from doing
+that I feel like there's there and there
+was like we almost moved to s it was a
+pretty close call but overall we felt
+like the fact that like the expenses of
+like living there just like didn't uh
+yeah make it worth one of the most
+expensive cities in the world certainly
+like people think New York City is
+expensive but wait till you try to run
+an apartment and San Francisco like
+they're both just brutal yeah uh and and
+that's one of the reasons why I moved
+back to to the Southwest uh move to
+Dallas is because um being like yes it
+was a huge opportunity being in San
+Francisco going to meetups every night
+meeting all these different Founders and
+stuff but the cost of living in San
+Francisco is like 3x living in Dallas I
+mean it was ridiculous uh so it was an
+easy decision some people are enabled to
+make 3x money by living in an S and I
+think other people it's harder to
+capture that value and so I think you
+just have to figure out for yourself and
+what you're doing whether like that's
+the case or not yeah and I mean you can
+always go for the you can always have
+the inexpensive house in Texas and go
+spend weeks in San Francisco like I did
+last summer uh doing all the you know
+Tech events and and meeting all the
+that's what I like too is I feel like I
+have infinite like possibility to travel
+now because I feel like if I live in SF
+or New York I feel really weird like
+leaving my apartment and leaving that
+City that I'm paying so much money in in
+to like keep whereas like I like if I
+want to go live abroad for a month like
+I don't feel any kind of weirdness like
+and not like just like hemorrhaging
+money at home um because of that so and
+even if you have a lot of money like it
+feels bad to spend yeah $4,000 on like a
+one-bedroom apartment or something each
+month it's like more than $100 a night
+that's like staying in a hotel
+practically just having an apartment you
+know uh and so I definitely think that's
+a good economical decision I mean here's
+the other thing too though is I think I
+like the culture of like SF and the
+happenings that they're better like I
+think the tech scene in Austin is like
+less good I think it's trying to get
+there and it's trying but it's not there
+quite yet um and so that's the other
+thing I kind of also know that like yes
+I'm getting this thing for like cheaper
+but it's like also coming at this cost
+and it's like well am I okay with that
+cost the answer is like right now yes um
+I am like totally okay with that that
+switch and like I can always fly out and
+do the events when I like am I'm like
+feeling like I want to and need to and
+like so yeah yeah and tell us a little
+bit about your co-founder like because I
+mean co-founding something is like a
+marriage from what I understand like of
+course Freo Camp thankfully like I just
+Creed it myself I we haven't had any
+founder drama or anything like that but
+at the same time I had to do a lot of
+the early stuff myself now of course
+we've got a team we got an amazing
+community of volunteer contributors who
+are driving things forward and doing
+most of the work at this point but like
+for void pet uh a a lot of the work is
+being done by you and by your co-founder
+still probably I don't know how whether
+you all have employees yet but maybe you
+can talk about like running that start
+up early stage you got some degree of
+traction you've got a ton of people in
+the Discord you got people buying merch
+I saw you like packaging up yeah
+plushies yeah talk about startup life
+yeah so we're a team of three now we
+have one game designer um kind of like
+between me and Linda the one thing we
+were like both kind of missing was like
+both the uh experience and also the like
+desire to like think through a lot of
+the necessary things you have to do for
+like creating really good gameplay and
+loops and like there's just like a lot
+of thought process that goes behind the
+scenes and like keeping games fun and
+feeling like you're rewarded the entire
+way through that it doesn't maybe seem
+like that from the player that you're
+just like I'm getting stars and I'm
+leveling up and I'm feeling great
+but as soon as you like make them and
+you create a couple of systems and
+people stop playing it after a few days
+cuz they beat it all and they're like or
+they like didn't you know they played it
+for the other end is like they played it
+for six months and they can't beat it
+like there's like there's like all these
+little knobs and like finally tuning
+that correctly was like very difficult
+um but yeah I really like like small
+teams and I feel like we get a lot done
+with like a small team of us and we were
+able to get uh a lot built out cuz
+here's the other cool thing is the right
+now how we feel about our product and
+each product is very different is right
+now um our main thing is just like
+figuring out what we actually want to
+build and making sure it's like really
+good and like that's very difficult and
+you have to like more people thinking
+about that is not always better um and
+like between Linda is fantastic at
+design and product and like I'm really
+good at like coding and building out and
+like doing the product together
+and the combination of our game
+developer and like we feel like we have
+almost like everything we need to like
+make void pet even better than it is now
+and now it's just like a matter of time
+of like slowly building this thing and
+like tuning it but I mean I this is like
+how early startup life is is all right
+we try this thing this thing either
+worked or it didn't work let's try it
+again oh we're in the pit of despair
+things aren't going well oh all of a
+sudden we're doing like a little bit
+better oh we're doing worse again oh
+we're doing a little better and so this
+is just like what my life is is like
+that and like that's just what it is to
+like run a business but that's also why
+it's fun like I really like having the
+like control of like man if I do a
+really good job I get really good like
+things in return but if I don't do a
+good job like it's worse than working at
+McDonald's like I would actually be
+better if I like was working frying
+print fries because I actually just like
+bankrupted myself or I just like made
+such a i I like I like that level of
+like accountability and so I know some
+people that's like very scary but I
+really like that um but well I mean to
+be to be completely fair you've got a
+skill set you've got a reputation you
+got all these things to fall back on if
+this doesn't work out right I mean here
+here's the thing too if you're if you
+you and then that that's that's like
+very true which is also like it makes it
+a lot easier like if like the company
+totally failed I could go back to like
+making YouTube videos and like making
+coding tutorials and like doing that
+thing so it's like a lot easier if like
+you could say have like a safety net of
+feel but also I think through to the
+process of like making a company makes
+you very employable as well because you
+should be like learning way more skills
+like here's like a thing if you are
+starting a company you are learning more
+skills at a faster rate than probably at
+a job and that's just like kind of the
+reality of it it's like at a job you're
+probably going to be learning for the
+first like year or two at that job and
+then you're probably going to like
+slowly comp out your learning curve
+which is why a lot of people recommend
+like changing jobs after a year or two
+to like maximize salaries and like also
+maximize learning that like that's very
+important otherwise you Peter out and I
+think that's the cool thing about doing
+a startup is like you can like I mean
+same thing can really happen at startups
+too though is you can you can like first
+few years you're like learning and then
+you're just kind of like chugging along
+and there's no longer a lot of like new
+learnings but that's also you kind of
+get to choose how fast you learn in a
+startup is the other thing it's kind of
+like homeschooling you could say like
+how much structure do you want how you
+get to choose it for yourself so I
+really like Choice as you can probably
+tell and FIB it sounds like you've
+optimized a lot of your life around
+choice and uh not necessarily like I
+guess you don't even necessarily have
+the context of having a boss and being
+in a cubicle and having that uh that I'm
+going to need you to come in on Sunday
+you know thing yeah and I I did um I did
+do an internship in college at Bank of
+America and that's like very that was
+very clear to me like man I did not like
+this um so I I did have that experience
+of like yep that's I didn't like it not
+a fan obviously banks are a little less
+exciting than say like tech companies
+but I was
+like I did not like
+that so uh I mean it sounds like some
+parting wisdom to people listening to
+this is if they want to do uh a project
+if they want to pursue what would be
+like some things you recommend they
+don't do if they decide to start an
+entrepreneurial project like uh like a
+mobile game for
+example honestly I'd say don't even
+think about the don'ts I think you
+should just enable yourself because I
+think the main reason like you're going
+to fail is not because you didn't go and
+do the thing it's because you just like
+never actually did the thing I think
+like it is pretty like I have made so
+many bad projects the only reason I even
+got to void pet in the first place is
+because I didn't give up and I kept
+building things and I like I didn't even
+think and like you're going to naturally
+figure out the don'ts and you're going
+to naturally like those things are going
+to come up and you're going to figure
+out over time and you learn a lot better
+on your own but what you're not going to
+do is you're most likely not going to
+try it so I would say I'm not even going
+to tell you why you shouldn't make a
+mobile game I think you should make a
+mobile game I think you should make the
+game you should make the app like
+there's enough people telling you why
+you shouldn't do those things I'll tell
+you go give it a try go build go build
+the thing it's an amazing note to end on
+don't even think about the
+don'ts thank you so much I've learned so
+much like I I've got you know like uh
+200 lines in my text editor of notes
+that I've taken listening to you I've
+learned a tremendous amount from you
+just watching your videos uh of course
+even watching your silly Tik toks and
+frankly like most of them are silly at
+least the ones if you don't have been a
+want like like your point of view
+looking up at me while you're like
+resting in my lap while I code you know
+it like weird uh but that's Tik Tok
+right that's Tik Tok for you but like
+I've learned so much from just checking
+out like uh of course like watching you
+know your your react native tutorial
+back in the day like was some of my
+first exposure to like how react native
+works and how you get things done with
+that and uh I just want to you know
+commend you on putting yourself out
+there being so Fearless in terms of
+creating these videos building this
+mobile game in an area that you you know
+self- profess to not have any real
+domain expertise in in game development
+right obviously you played a ton of
+games you played League you you did
+probably lots of other gamer stuff over
+the years but yep to have the audacity
+to go out there and like build a game on
+you know mobile and and actually have
+success with that that is incredibly
+impressive and uh I'm very excited uh to
+if there's like a demo video or
+something that you'd recommend we share
+to give people uh an idea of like the
+core gameplay Loop or something like
+that let me know we can put that in the
+the show notes again lots of links in
+the show notes be sure to check out some
+of this cool
+stuff Ben what's next for you like what
+is the next six months look like the
+rest of 202 I'm just grinding I'm coding
+that's what you're going to see me doing
+and that's what you should do code
+freecodecamp.com yeah freec camp.com
+Will redirect you to fre camp.org but
+yes it's.org now yeah we we got both but
+we we're a charity so we used other uh
+but yeah like I hope you all walk away
+with a ton of inspiration uh a ton of
+like forward momentum that Ben has
+imparted here he's he said so many
+interesting things throughout this
+conversation I I again I just want to
+thank you for carving out time out of
+your busy schedule being a Game Dev uh
+getting things done being a startup
+founder and uh yeah until next week
+everybody happy
+coding see you

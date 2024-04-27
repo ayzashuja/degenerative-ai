@@ -1,0 +1,191 @@
+okay then gangs so now we have a couple
+of simple providers providing us with
+some values and now we need to consume
+them in some widgets within the
+application so what we want to do is
+consume the products data inside the
+home screen so we can list them out in
+the grid but before we consume the state
+anywhere we first of all have to make a
+small edit to the main doart file and
+that edit is to wrap the entire
+application with a provider scope and
+what provider scope does is outline the
+scope in which the providers can be used
+within the application so that means if
+we wrap the entire application with a
+provider scope then any widget in the
+application can consume the provider
+data but if we just wrapped a sub tree
+in the application with the provider
+scope then only widgets within that sub
+tree could consume the provider state so
+let's do this so what I'm going to do is
+Select my app I'm going to come to the
+context menu and I'm going to say wrap
+with widgets
+and this is going to be the provider
+scope widget and I'm going to click on
+this to import it and we get a blue
+squiggly line and that's because this
+whole thing can be a const so we can
+take it from here so cut that and paste
+it over here as well like so make sure
+this file gets imported flutter River
+pod we need that to use provider scope
+so now we're saying that basically any
+widget inside the entire application
+inside this widget tree my app which is
+the root widget that has access to or
+rather they have access to the
+providers okay so now we can head to the
+home screen and we can access the
+provider State inside here now when we
+do this we say that the widget that
+accesses the state is consuming the
+state right in other words the widget is
+a consumer widget now the river pod
+package comes fully baate with a special
+kind of widget class called consumer
+widgets and we'd use this class when we
+have a stateless widget that wants to
+consume some provider States and all we
+do is replace the stateless widget class
+that we extend right here with that
+consumer widget class instead so let's
+do that and make sure we import the
+river pod package to because that's
+where this consumer widget class comes
+from now this consumer widget is only
+intended to be used for stateless
+widgets like this is if you have a
+stateful widget which needs to consume
+provider State then you need to use a
+different class called consumer stateful
+widget but we'll see that in the next
+lesson anyway now our home screen
+extends this special consumer widget
+which essentially adds functionality to
+the widget for us and it gives us the
+ability to communicate with a provider
+the way it does that is by giving us
+access to a second argument inside the
+build method right here of type widget
+ref and we're just going to call the
+argument ref and through this ref object
+we can use different methods to do
+things like read provider data watch
+provider data for changes and get the
+updated data whenever it does change
+refresh the provider State Etc now
+typically you'll probably be using
+either the read or watch methods to
+access the state from a provider nearly
+all the time I use the watch method
+which can read the data once for us and
+then watches for changes if the data
+ever gets changed then it would force
+the build method to rerun get that
+updated value for us so let's give this
+a wh so then inside this build function
+what I'm going to do is create a final
+value called all products and I'm going
+to set that equal to the ref and then
+use the watch method on this and then
+all we have to do is pass in a provider
+that we want to watch so we've got two
+to pick from right here we're going to
+watch this one product provider so let's
+go over here and say products provider
+we'll click on this and it Imports this
+file for us that's important okay so we
+have now these all products right so
+when we use this watch method like I
+said it grabs the state return from this
+provider which is all products initially
+and then if that was to ever change in
+the future then we would get an updated
+value here and it would force the build
+method also to rerun so we're updating
+the UI as well with that new data if we
+use it in the
+UI okay so now we have all products we
+can use those down here to actually
+output the products now the first thing
+I want to do is instead of saying the
+item count is eight I want to get the
+the uh the length of this list so I'm
+going to copy that and I'm going to
+paste it in right here and then use the
+length property so now we're outputting
+as many grid items as there are inside
+this list and then down here inside the
+item Builder we want to basically output
+a bunch of stuff for each product so to
+do that what I'm going to do is add a
+child to this container which is going
+to be a
+column and in inside this column we're
+going to have a children property so
+let's do that children which is a list
+of widgets inside this list the first
+thing I want for each product is an
+image so I'm going to say image. assets
+and then we need a path to that image
+now how do we get that we know it's on
+all products right um rather it's on
+each product as an image property and we
+have the all products list so what we
+could do is say all
+products and then we can use the index
+that we get access to inside the Builder
+where is that right here and then we can
+use the image property on that so do
+image and that gets us the path to the
+image so it's going to show that image I
+also want to give this a width and
+height so width is going to be 60 and
+height going to be 60 as well now after
+the image I want to Output the product
+title so I'll use a text widget for that
+inside here we'll say all products and
+again use the index and by the way the
+index comes from the build because when
+we use an item Builder we basically
+cycle through something like the product
+right and for each time we cycle through
+the index goes up by one so initially
+it's going to be zero we get the first
+one then it's one then it's two so we're
+outputting this for each product right
+okay so then we want the title property
+right here and then finally I want to
+Output the price so another text widget
+inside here we're going to Output first
+of all a pound sign then I want to
+Output a variable so I'm going to use
+dollar sign curly braces to Output that
+variable it's all products and then we
+want the index again and then on that we
+want the price property okay so let's
+save this and see if this works okay so
+it says no provider scope found what I'm
+going to do is hit hard refresh over
+here because we did provide the provider
+scope inside the main file yep and now
+it works now we can see all of those
+output to the screen which is
+awesome all right there's a little bit
+of at the bottom of each one of these
+grid items and that's fine because we're
+going to add a little button later to
+add each item to the C but now we've
+seen how to consume a provider inside a
+stateless widget and all we do is we
+extend consumer widget instead of
+stateless widget that allows us to
+access the ref as a second argument
+inside the build method and we use that
+ref to watch the products provider right
+here to get those products and then we
+can output them in the widget tree okay

@@ -62,7 +62,7 @@
     </form>
     <script src="{{ url_for('static', filename='channels.js') }}"></script>
     <div id="chat-container">
-        <h2>Ask questions from programmingwithmosh</h2>
+        <h2>Ask questions from channels</h2>
         <div id="chat-log"></div>
         <div id="input-container">
             <input type="text" id="user-input" placeholder="Type your message...">
@@ -90,7 +90,7 @@
             .then(response => response.json())
             .then(data => {
                 // Append the server's response to the chat log
-                appendMessage('programmingwithmosh', data.message);
+                appendMessage('channels response:', data.message);
             })
             .catch(error => console.error('Error:', error));
     
